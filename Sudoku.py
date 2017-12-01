@@ -79,12 +79,14 @@ def settinguteScreen():
                     
                 heli = True
 
-def kuidasmängida():   #siin on pooleli
+def kuidasmängida():
     ekraaniPind.fill(valge)
     #Taust
     pilt("puit.jpg",0,0)
     #Juhend
     pilt("sudokujuhend.png",0,0)
+    #Tagasi nupp
+    tekstKastis("Tagasi", "Bauhaus 93",50,550,660)
     
     pygame.display.flip()
     
@@ -93,7 +95,26 @@ def kuidasmängida():   #siin on pooleli
         if event.type == pygame.QUIT:
             pygame.quit()
             break
+        eventx, eventy = pygame.mouse.get_pos()
+        if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+            if evendiasukoht(545,720,660,720,eventx,eventy):
+                homescreen()
+                break
+            
+def mänguekraan():             #poolik
+    #ekraani atribuudid
+    ekraaniPind.fill(valge)
     
+    pilt("sudokugrid.png",50,50)
+    
+    pygame.display.flip()
+    
+    while True:
+        event = pygame.event.poll()
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            break
+        
 def homescreen():
     #ekraani atribuudid
     pygame.display.set_caption("SuDoKu   By Uq and Erki")
@@ -134,10 +155,11 @@ def homescreen():
                 settinguteScreen()
                 break
             elif evendiasukoht(220,520,250,330,eventx,eventy): #mängima
-                print(eventx,eventy)
+                mänguekraan()
+                break
             elif evendiasukoht(215,530,470,515,eventx,eventy): #raskusastmed
                 print(eventx,eventy)
-            elif evendiasukoht(620,720,620,720,eventx,eventy):
+            elif evendiasukoht(620,720,620,720,eventx,eventy): #how to nupp
                 kuidasmängida()
                 break
             else:
