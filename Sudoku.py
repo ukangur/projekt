@@ -42,11 +42,9 @@ def muusika(laulunimi):
 def settinguteScreen():
     ekraaniPind.fill(valge)
     #Taust
-    pilt("puit.jpg",0,0)
-    
+    pilt("puitsettingutel.jpg",0,0)
     #Suur kõlar
     pilt("kõlarmutetud.png", 200, 200)
-    
     #Tagasi nupp
     tekstKastis("Tagasi", "Bauhaus 93",50,70,660)
     
@@ -60,7 +58,7 @@ def settinguteScreen():
             break
         eventx, eventy = pygame.mouse.get_pos()
         if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-            pilt("puit.jpg",0,0)
+            pilt("puitsettingutel.jpg",0,0)
             tekstKastis("Tagasi", "Bauhaus 93",50,70,660)
             if evendiasukoht(60,600,60,600,eventx,eventy) and a % 2 == 1:
                 pilt("kõlarsees.png", 200,200)
@@ -82,7 +80,7 @@ def settinguteScreen():
 def kuidasmängida():
     ekraaniPind.fill(valge)
     #Taust
-    pilt("puit.jpg",0,0)
+    pilt("puitsettingutel.jpg",0,0)
     #Juhend
     pilt("sudokujuhend.png",0,0)
     #Tagasi nupp
@@ -104,7 +102,6 @@ def kuidasmängida():
 def mänguekraan():             #poolik
     #ekraani atribuudid
     ekraaniPind.fill(valge)
-    
     pilt("sudokugrid.png",50,50)
     
     pygame.display.flip()
@@ -119,22 +116,16 @@ def homescreen():
     #ekraani atribuudid
     pygame.display.set_caption("SuDoKu   By Uq and Erki")
     ekraaniPind.fill(valge)
-    
     #Taust
     pilt("puit.jpg",0,0)
-    
     #Sudoku logo
-    tekstKastis("SuDoKu", "Bauhaus 93", 100, 200, 120)
-    
+    tekstKastis("SuDoKu", "Bauhaus 93", 100, 185, 150)
+    #Nimed logo all
+    tekstKastis("Erik Mukk & Uku Kangur", "Bauhaus 93", 35, 165, 260)
     #Mängima
-    tekstKastis("Mängima", "Bauhaus 93", 70, 225, 250)
-    
+    tekstKastis("Mängima", "Bauhaus 93", 55, 237, 407)
     #Settings nupp
-    tekstKastis("Sätted", "Bauhaus 93", 50, 300, 400)
-    
-    #Raskusastmed
-    tekstKastis("Raskusastmed", "Bauhaus 93", 50, 220, 465)
-    
+    tekstKastis("Sätted", "Bauhaus 93", 55, 275, 575)
     #Abimehike
     pilt("küsimärk.png",620,620)
     
@@ -150,15 +141,13 @@ def homescreen():
             break
         elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:  #vasakklikk = 1
             eventx, eventy = pygame.mouse.get_pos()
-            if evendiasukoht(295,450,400,450,eventx,eventy):
-                print((eventx, eventy))
+            print(eventx, eventy)
+            if evendiasukoht(232,467,563,647,eventx,eventy):
                 settinguteScreen()
                 break
-            elif evendiasukoht(220,520,250,330,eventx,eventy): #mängima
+            elif evendiasukoht(232,467,398,480,eventx,eventy): #mängima
                 mänguekraan()
                 break
-            elif evendiasukoht(215,530,470,515,eventx,eventy): #raskusastmed
-                print(eventx,eventy)
             elif evendiasukoht(620,720,620,720,eventx,eventy): #how to nupp
                 kuidasmängida()
                 break
