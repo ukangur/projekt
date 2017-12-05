@@ -42,7 +42,7 @@ def muusika(laulunimi):
 def settinguteScreen():
     ekraaniPind.fill(valge)
     #Taust
-    pilt("puitsettingutel.jpg",0,0)
+    pilt("puitoriginaal.jpg",0,0)
     #Suur kõlar
     pilt("kõlarmutetud.png", 200, 200)
     #Tagasi nupp
@@ -58,7 +58,7 @@ def settinguteScreen():
             break
         eventx, eventy = pygame.mouse.get_pos()
         if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-            pilt("puitsettingutel.jpg",0,0)
+            pilt("puitoriginaal.jpg",0,0)
             tekstKastis("Tagasi", "Bauhaus 93",50,70,660)
             if evendiasukoht(60,600,60,600,eventx,eventy) and a % 2 == 1:
                 pilt("kõlarsees.png", 200,200)
@@ -80,7 +80,7 @@ def settinguteScreen():
 def kuidasmängida():
     ekraaniPind.fill(valge)
     #Taust
-    pilt("puitsettingutel.jpg",0,0)
+    pilt("puitoriginaal.jpg",0,0)
     #Juhend
     pilt("sudokujuhend.png",0,0)
     #Tagasi nupp
@@ -98,7 +98,28 @@ def kuidasmängida():
             if evendiasukoht(545,720,660,720,eventx,eventy):
                 homescreen()
                 break
-            
+
+def raskusastmed():
+    #ekraani atribuudid
+    ekraaniPind.fill(valge)
+    pilt("puitoriginaal.jpg", 0, 0)
+    #raskusastmed
+    tekstKastis("Lihtne", "Bauhaus 93", 50, 300, 100)
+    tekstKastis("Raskem", "Bauhaus 93", 50, 280, 200)
+    tekstKastis("Veel raskem", "Bauhaus 93", 50, 230, 300)
+    tekstKastis("Võimatu", "Bauhaus 93", 50, 280, 400)
+    
+    pygame.display.flip()
+    
+    while True:
+        event = pygame.event.poll()
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            break
+        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:  #vasakklikk = 1
+            eventx, eventy = pygame.mouse.get_pos()
+            print(eventx, eventy)
+
 def mänguekraan():             #poolik
     #ekraani atribuudid
     ekraaniPind.fill(valge)
@@ -146,7 +167,7 @@ def homescreen():
                 settinguteScreen()
                 break
             elif evendiasukoht(232,467,398,480,eventx,eventy): #mängima
-                mänguekraan()
+                raskusastmed()
                 break
             elif evendiasukoht(620,720,620,720,eventx,eventy): #how to nupp
                 kuidasmängida()
