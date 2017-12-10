@@ -4,6 +4,9 @@ pygame.init()
 global ekraaniPind
 ekraaniPind = pygame.display.set_mode( (720, 720) )
 
+global heli
+heli = False
+
 #defineerin värve
 must = (0,0,0)
 valge = (255,255,255)
@@ -40,11 +43,16 @@ def muusika(laulunimi):
     pygame.mixer.music.play()
     
 def settinguteScreen():
+    global heli
+    
     ekraaniPind.fill(valge)
     #Taust
     pilt("puitoriginaal.jpg",0,0)
     #Suur kõlar
-    pilt("kõlarmutetud.png", 200, 200)
+    if heli == False:
+        pilt("kõlarmutetud.png", 200, 200)
+    else:
+        pilt("kõlarsees.png",200,200)
     #Tagasi nupp
     tekstKastis("Tagasi", "Bauhaus 93",50,70,660)
     
@@ -61,15 +69,16 @@ def settinguteScreen():
             pilt("puitoriginaal.jpg",0,0)
             tekstKastis("Tagasi", "Bauhaus 93",50,70,660)
             if evendiasukoht(60,600,60,600,eventx,eventy) and a % 2 == 1:
-                pilt("kõlarsees.png", 200,200)
+                pilt("kõlarsees.png",200,200)
                 pygame.display.flip()
                 muusika("helilaul.mp3")
+                heli = True
                 a += 1
             elif evendiasukoht(60,600,60,600,eventx,eventy) and a % 2 != 1:
                 pilt("kõlarmutetud.png",200,200)
                 pygame.mixer.music.stop()
                 pygame.display.flip()
-                
+                heli = False
                 a += 1
             elif evendiasukoht(60,230,660,720,eventx,eventy):
                 homescreen()
@@ -152,9 +161,6 @@ def homescreen():
     
     pygame.display.flip()
     
-    #Panen heli, kui vajutatakse sisse
-    heli = False
-
     while True:
         event = pygame.event.poll()
         if event.type == pygame.QUIT:
