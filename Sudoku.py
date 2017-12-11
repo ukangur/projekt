@@ -1,4 +1,10 @@
 import pygame
+import os
+
+#märgin, kus kohas avaneb pygame'i aken kuvaril
+x=50
+y=50
+os.environ["SDL_VIDEO_WINDOW_POS"] = "%d,%d" % (x,y)
 pygame.init()
 
 global ekraaniPind
@@ -111,12 +117,12 @@ def kuidasmängida():
 def raskusastmed():
     #ekraani atribuudid
     ekraaniPind.fill(valge)
-    pilt("puitoriginaal.jpg", 0, 0)
+    pilt("raskusastmed.jpg", 0, 0)
     #raskusastmed
-    tekstKastis("Lihtne", "Bauhaus 93", 50, 300, 100)
-    tekstKastis("Raskem", "Bauhaus 93", 50, 280, 200)
-    tekstKastis("Veel raskem", "Bauhaus 93", 50, 230, 300)
-    tekstKastis("Võimatu", "Bauhaus 93", 50, 280, 400)
+    tekstKastis("Lihtne", "Bauhaus 93", 50, 300, 75)
+    tekstKastis("Raskem", "Bauhaus 93", 50, 290, 225)
+    tekstKastis("Veel raskem", "Bauhaus 93", 50, 240, 370)
+    tekstKastis("Võimatu", "Bauhaus 93", 50, 280, 520)
     
     pygame.display.flip()
     
@@ -128,6 +134,19 @@ def raskusastmed():
         elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:  #vasakklikk = 1
             eventx, eventy = pygame.mouse.get_pos()
             print(eventx, eventy)
+            if evendiasukoht(210,530,55,145,eventx,eventy):
+                homescreen()
+                break
+            elif evendiasukoht(210,530,205,295,eventx,eventy):
+                homescreen()
+                break
+            elif evendiasukoht(210,530,350,445,eventx,eventy):
+                homescreen()
+                break
+            elif evendiasukoht(210,530,500,590,eventx,eventy):
+                homescreen()
+                break
+    
 
 def mänguekraan():             #poolik
     #ekraani atribuudid
