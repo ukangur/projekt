@@ -53,14 +53,14 @@ def settinguteScreen():
     
     ekraaniPind.fill(valge)
     #Taust
-    pilt("puitoriginaal.jpg",0,0)
+    pilt("seaded.jpg",0,0)
     #Suur kõlar
     if heli == False:
-        pilt("kõlarmutetud.png", 200, 200)
+        pilt("kõlarmutetud.png",280,275)
     else:
-        pilt("kõlarsees.png",200,200)
+        pilt("kõlarsees.png",280,275)
     #Tagasi nupp
-    tekstKastis("Tagasi", "Bauhaus 93",50,70,660)
+    tekstKastis("Tagasi", "Bauhaus 93",50,45,630)
     
     pygame.display.flip()
     
@@ -70,23 +70,25 @@ def settinguteScreen():
         if event.type == pygame.QUIT:
             pygame.quit()
             break
-        eventx, eventy = pygame.mouse.get_pos()
+
         if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-            pilt("puitoriginaal.jpg",0,0)
-            tekstKastis("Tagasi", "Bauhaus 93",50,70,660)
-            if evendiasukoht(60,600,60,600,eventx,eventy) and a % 2 == 1:
-                pilt("kõlarsees.png",200,200)
+            eventx, eventy = pygame.mouse.get_pos()
+            print(eventx, eventy)
+            pilt("seaded.jpg",0,0)
+            tekstKastis("Tagasi", "Bauhaus 93",50,45,630)
+            if evendiasukoht(202,551,242,495,eventx,eventy) and a % 2 == 1:
+                pilt("kõlarsees.png",280,275)
                 pygame.display.flip()
                 muusika("helilaul.mp3")
                 heli = True
                 a += 1
-            elif evendiasukoht(60,600,60,600,eventx,eventy) and a % 2 != 1:
-                pilt("kõlarmutetud.png",200,200)
+            elif evendiasukoht(202,551,242,495,eventx,eventy) and a % 2 != 1:
+                pilt("kõlarmutetud.png",280,275)
                 pygame.mixer.music.stop()
                 pygame.display.flip()
                 heli = False
                 a += 1
-            elif evendiasukoht(60,230,660,720,eventx,eventy):
+            elif evendiasukoht(39,195,617,696,eventx,eventy):
                 homescreen()
                 break
                     
@@ -95,11 +97,9 @@ def settinguteScreen():
 def kuidasmängida():
     ekraaniPind.fill(valge)
     #Taust
-    pilt("puitoriginaal.jpg",0,0)
-    #Juhend
-    pilt("sudokujuhend.png",0,0)
+    pilt("info.jpg",0,0)
     #Tagasi nupp
-    tekstKastis("Tagasi", "Bauhaus 93",50,550,660)
+    tekstKastis("Tagasi", "Bauhaus 93", 50, 45, 630)
     
     pygame.display.flip()
     
@@ -110,19 +110,20 @@ def kuidasmängida():
             break
         eventx, eventy = pygame.mouse.get_pos()
         if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-            if evendiasukoht(545,720,660,720,eventx,eventy):
+            if evendiasukoht(39,195,617,696,eventx,eventy):
                 homescreen()
                 break
 
 def raskusastmed():
     #ekraani atribuudid
     ekraaniPind.fill(valge)
-    pilt("raskusastmed.jpg", 0, 0)
+    pilt("raskusastmed1.jpg", 0, 0)
     #raskusastmed
     tekstKastis("Lihtne", "Bauhaus 93", 50, 300, 75)
     tekstKastis("Raskem", "Bauhaus 93", 50, 290, 225)
     tekstKastis("Veel raskem", "Bauhaus 93", 50, 240, 370)
     tekstKastis("Võimatu", "Bauhaus 93", 50, 280, 520)
+    tekstKastis("Tagasi", "Bauhaus 93", 50, 45, 630)
     
     pygame.display.flip()
     
@@ -144,6 +145,9 @@ def raskusastmed():
                 homescreen()
                 break
             elif evendiasukoht(210,530,500,590,eventx,eventy):
+                homescreen()
+                break
+            elif evendiasukoht(39,195,617,696,eventx,eventy):
                 homescreen()
                 break
     
