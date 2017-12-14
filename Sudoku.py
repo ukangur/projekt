@@ -148,7 +148,7 @@ def raskusastmed():
                 mänguekraan()
                 break
             elif evendiasukoht(39,195,617,696,eventx,eventy):
-                mänguekraan()
+                homescreen()
                 break
     
 
