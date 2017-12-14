@@ -1,6 +1,5 @@
-import pygame
-import os
-
+import pygame, os, eztext #eztext on alla laaditud library, et sisestada teksti pygame´i http://www.pygame.org/project/920/1582
+import time
 #märgin, kus kohas avaneb pygame'i aken kuvaril
 x=50
 y=50
@@ -50,7 +49,7 @@ def muusika(laulunimi):
     
 def settinguteScreen():
     global heli
-    
+       
     ekraaniPind.fill(valge)
     #Taust
     pilt("seaded.jpg",0,0)
@@ -123,6 +122,7 @@ def raskusastmed():
     tekstKastis("Raskem", "Bauhaus 93", 50, 290, 225)
     tekstKastis("Veel raskem", "Bauhaus 93", 50, 240, 370)
     tekstKastis("Võimatu", "Bauhaus 93", 50, 280, 520)
+    #tagasi
     tekstKastis("Tagasi", "Bauhaus 93", 50, 45, 630)
     
     pygame.display.flip()
@@ -152,10 +152,19 @@ def raskusastmed():
                 break
     
 
-def mänguekraan():             #poolik
+def mänguekraan():#poolik
+
+    
     #ekraani atribuudid
     ekraaniPind.fill(valge)
-    pilt("sudokugrid.png",50,50)
+    pilt("sudokupohi.png",0,0)
+    #tagasi
+    tekstKastis("Tagasi", "Bauhaus 93", 50, 50, 620)
+    #kontrolli nupp
+    tekstKastis("Kontrolli", "Bauhaus 93", 40, 550, 115)
+    
+    #sudoku numbrite kastid
+    sisestusKast = eztext.Input(maxlength=1, color=(255,0,0), prompt='type here: ')
     
     pygame.display.flip()
     
@@ -164,6 +173,14 @@ def mänguekraan():             #poolik
         if event.type == pygame.QUIT:
             pygame.quit()
             break
+        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+            eventx, eventy = pygame.mouse.get_pos()
+            print(eventx, eventy)
+            if evendiasukoht(21,222,595,694,eventx,eventy):
+                raskusastmed()
+                break
+            elif evendiasukoht(527,720,89,190,eventx,eventy):
+                continue
         
 def homescreen():
     #ekraani atribuudid
