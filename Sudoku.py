@@ -198,7 +198,7 @@ def homescreen():
             elif evendiasukoht(232,467,398,480,eventx,eventy): #mängima
                 raskusastmed()
                 break
-            elif evendiasukoht(620,720,620,720,eventx,eventy): #how to nupp
+            elif evendiasukoht(620,720,620,720,eventx,eventy): #õpetus
                 kuidasmängida()
                 break
             else:
