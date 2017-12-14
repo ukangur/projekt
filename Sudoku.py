@@ -136,19 +136,19 @@ def raskusastmed():
             eventx, eventy = pygame.mouse.get_pos()
             print(eventx, eventy)
             if evendiasukoht(210,530,55,145,eventx,eventy):
-                homescreen()
+                mänguekraan()
                 break
             elif evendiasukoht(210,530,205,295,eventx,eventy):
-                homescreen()
+                mänguekraan()
                 break
             elif evendiasukoht(210,530,350,445,eventx,eventy):
-                homescreen()
+                mänguekraan()
                 break
             elif evendiasukoht(210,530,500,590,eventx,eventy):
-                homescreen()
+                mänguekraan()
                 break
             elif evendiasukoht(39,195,617,696,eventx,eventy):
-                homescreen()
+                mänguekraan()
                 break
     
 
