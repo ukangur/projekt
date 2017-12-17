@@ -367,39 +367,1588 @@ def mänguekraan(sudoku):#poolik
                 a,b = valik
                 sudoku[a][b] = 1
                 print(sudoku)
+                #numbrite blitimine 1.rida
+                if a == 0 and b == 0:
+                    tekstKastis("1", "Comic Sans", 45, 75, 75)
+                if a == 0 and b == 1:
+                    tekstKastis("1", "Comic Sans", 45, 125, 75)
+                if a == 0 and b == 2:
+                    tekstKastis("1", "Comic Sans", 45, 175, 75)
+                if a == 0 and b == 3:
+                    tekstKastis("1", "Comic Sans", 45, 225, 75)
+                if a == 0 and b == 4:
+                    tekstKastis("1", "Comic Sans", 45, 275, 75)
+                if a == 0 and b == 5:
+                    tekstKastis("1", "Comic Sans", 45, 325, 75)
+                if a == 0 and b == 6:
+                    tekstKastis("1", "Comic Sans", 45, 375, 75)
+                if a == 0 and b == 7:
+                    tekstKastis("1", "Comic Sans", 45, 425, 75)
+                if a == 0 and b == 8:
+                    tekstKastis("1", "Comic Sans", 45, 475, 75)
+                #2.rida
+                if a == 1 and b == 0:
+                    tekstKastis("1", "Comic Sans", 45, 75, 125)
+                if a == 1 and b == 1:
+                    tekstKastis("1", "Comic Sans", 45, 125, 125)
+                if a == 1 and b == 2:
+                    tekstKastis("1", "Comic Sans", 45, 175, 125)
+                if a == 1 and b == 3:
+                    tekstKastis("1", "Comic Sans", 45, 225, 125)
+                if a == 1 and b == 4:
+                    tekstKastis("1", "Comic Sans", 45, 275, 125)
+                if a == 1 and b == 5:
+                    tekstKastis("1", "Comic Sans", 45, 325, 125)
+                if a == 1 and b == 6:
+                    tekstKastis("1", "Comic Sans", 45, 375, 125)
+                if a == 1 and b == 7:
+                    tekstKastis("1", "Comic Sans", 45, 425, 125)
+                if a == 1 and b == 8:
+                    tekstKastis("1", "Comic Sans", 45, 475, 175)
+                #3.rida
+                if a == 2 and b == 0:
+                    tekstKastis("1", "Comic Sans", 45, 75, 175)
+                if a == 2 and b == 1:
+                    tekstKastis("1", "Comic Sans", 45, 125, 175)
+                if a == 2 and b == 2:
+                    tekstKastis("1", "Comic Sans", 45, 175, 175)
+                if a == 2 and b == 3:
+                    tekstKastis("1", "Comic Sans", 45, 225, 175)
+                if a == 2 and b == 4:
+                    tekstKastis("1", "Comic Sans", 45, 275, 175)
+                if a == 2 and b == 5:
+                    tekstKastis("1", "Comic Sans", 45, 325, 175)
+                if a == 2 and b == 6:
+                    tekstKastis("1", "Comic Sans", 45, 375, 175)
+                if a == 2 and b == 7:
+                    tekstKastis("1", "Comic Sans", 45, 425, 175)
+                if a == 2 and b == 8:
+                    tekstKastis("1", "Comic Sans", 45, 475, 175)
+                #4.rida
+                if a == 3 and b == 0:
+                    tekstKastis("1", "Comic Sans", 45, 75, 225)
+                if a == 3 and b == 1:
+                    tekstKastis("1", "Comic Sans", 45, 125, 225)
+                if a == 3 and b == 2:
+                    tekstKastis("1", "Comic Sans", 45, 175, 225)
+                if a == 3 and b == 3:
+                    tekstKastis("1", "Comic Sans", 45, 225, 225)
+                if a == 3 and b == 4:
+                    tekstKastis("1", "Comic Sans", 45, 275, 225)
+                if a == 3 and b == 5:
+                    tekstKastis("1", "Comic Sans", 45, 325, 225)
+                if a == 3 and b == 6:
+                    tekstKastis("1", "Comic Sans", 45, 375, 225)
+                if a == 3 and b == 7:
+                    tekstKastis("1", "Comic Sans", 45, 425, 225)
+                if a == 3 and b == 8:
+                    tekstKastis("1", "Comic Sans", 45, 475, 225)
+                #5.rida
+                if a == 4 and b == 0:
+                    tekstKastis("1", "Comic Sans", 45, 75, 275)
+                if a == 4 and b == 1:
+                    tekstKastis("1", "Comic Sans", 45, 125, 275)
+                if a == 4 and b == 2:
+                    tekstKastis("1", "Comic Sans", 45, 175, 275)
+                if a == 4 and b == 3:
+                    tekstKastis("1", "Comic Sans", 45, 225, 275)
+                if a == 4 and b == 4:
+                    tekstKastis("1", "Comic Sans", 45, 275, 275)
+                if a == 4 and b == 5:
+                    tekstKastis("1", "Comic Sans", 45, 325, 275)
+                if a == 4 and b == 6:
+                    tekstKastis("1", "Comic Sans", 45, 375, 275)
+                if a == 4 and b == 7:
+                    tekstKastis("1", "Comic Sans", 45, 425, 275)
+                if a == 4 and b == 8:
+                    tekstKastis("1", "Comic Sans", 45, 475, 275)
+                #6.rida
+                if a == 5 and b == 0:
+                    tekstKastis("1", "Comic Sans", 45, 75, 325)
+                if a == 5 and b == 1:
+                    tekstKastis("1", "Comic Sans", 45, 125, 325)
+                if a == 5 and b == 2:
+                    tekstKastis("1", "Comic Sans", 45, 175, 325)
+                if a == 5 and b == 3:
+                    tekstKastis("1", "Comic Sans", 45, 225, 325)
+                if a == 5 and b == 4:
+                    tekstKastis("1", "Comic Sans", 45, 275, 325)
+                if a == 5 and b == 5:
+                    tekstKastis("1", "Comic Sans", 45, 325, 325)
+                if a == 5 and b == 6:
+                    tekstKastis("1", "Comic Sans", 45, 375, 325)
+                if a == 5 and b == 7:
+                    tekstKastis("1", "Comic Sans", 45, 425, 325)
+                if a == 5 and b == 8:
+                    tekstKastis("1", "Comic Sans", 45, 475, 325)
+                #7.rida
+                if a == 6 and b == 0:
+                    tekstKastis("1", "Comic Sans", 45, 75, 375)
+                if a == 6 and b == 1:
+                    tekstKastis("1", "Comic Sans", 45, 125, 375)
+                if a == 6 and b == 2:
+                    tekstKastis("1", "Comic Sans", 45, 175, 375)
+                if a == 6 and b == 3:
+                    tekstKastis("1", "Comic Sans", 45, 225, 375)
+                if a == 6 and b == 4:
+                    tekstKastis("1", "Comic Sans", 45, 275, 375)
+                if a == 6 and b == 5:
+                    tekstKastis("1", "Comic Sans", 45, 325, 375)
+                if a == 6 and b == 6:
+                    tekstKastis("1", "Comic Sans", 45, 375, 375)
+                if a == 6 and b == 7:
+                    tekstKastis("1", "Comic Sans", 45, 425, 375)
+                if a == 6 and b == 8:
+                    tekstKastis("1", "Comic Sans", 45, 475, 375)
+                #8.rida
+                if a == 7 and b == 0:
+                    tekstKastis("1", "Comic Sans", 45, 75, 425)
+                if a == 7 and b == 1:
+                    tekstKastis("1", "Comic Sans", 45, 125, 425)
+                if a == 7 and b == 2:
+                    tekstKastis("1", "Comic Sans", 45, 175, 425)
+                if a == 7 and b == 3:
+                    tekstKastis("1", "Comic Sans", 45, 225, 425)
+                if a == 7 and b == 4:
+                    tekstKastis("1", "Comic Sans", 45, 275, 425)
+                if a == 7 and b == 5:
+                    tekstKastis("1", "Comic Sans", 45, 325, 425)
+                if a == 7 and b == 6:
+                    tekstKastis("1", "Comic Sans", 45, 375, 425)
+                if a == 7 and b == 7:
+                    tekstKastis("1", "Comic Sans", 45, 425, 425)
+                if a == 7 and b == 8:
+                    tekstKastis("1", "Comic Sans", 45, 475, 425)
+                #9.rida
+                if a == 8 and b == 0:
+                    tekstKastis("1", "Comic Sans", 45, 75, 475)
+                if a == 8 and b == 1:
+                    tekstKastis("1", "Comic Sans", 45, 125, 475)
+                if a == 8 and b == 2:
+                    tekstKastis("1", "Comic Sans", 45, 175, 475)
+                if a == 8 and b == 3:
+                    tekstKastis("1", "Comic Sans", 45, 225, 475)
+                if a == 8 and b == 4:
+                    tekstKastis("1", "Comic Sans", 45, 275, 475)
+                if a == 8 and b == 5:
+                    tekstKastis("1", "Comic Sans", 45, 325, 475)
+                if a == 8 and b == 6:
+                    tekstKastis("1", "Comic Sans", 45, 375, 475)
+                if a == 8 and b == 7:
+                    tekstKastis("1", "Comic Sans", 45, 425, 475)
+                if a == 8 and b == 8:
+                    tekstKastis("1", "Comic Sans", 45, 475, 475)
+                    
+                    
             if evendiasukoht(112,156,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 2
                 print(sudoku)
+                #numbrite blitimine 1.rida
+                if a == 0 and b == 0:
+                    tekstKastis("2", "Comic Sans", 45, 75, 75)
+                if a == 0 and b == 1:
+                    tekstKastis("2", "Comic Sans", 45, 125, 75)
+                if a == 0 and b == 2:
+                    tekstKastis("2", "Comic Sans", 45, 175, 75)
+                if a == 0 and b == 3:
+                    tekstKastis("2", "Comic Sans", 45, 225, 75)
+                if a == 0 and b == 4:
+                    tekstKastis("2", "Comic Sans", 45, 275, 75)
+                if a == 0 and b == 5:
+                    tekstKastis("2", "Comic Sans", 45, 325, 75)
+                if a == 0 and b == 6:
+                    tekstKastis("2", "Comic Sans", 45, 375, 75)
+                if a == 0 and b == 7:
+                    tekstKastis("2", "Comic Sans", 45, 425, 75)
+                if a == 0 and b == 8:
+                    tekstKastis("2", "Comic Sans", 45, 475, 75)
+                #2.rida
+                if a == 1 and b == 0:
+                    tekstKastis("2", "Comic Sans", 45, 75, 125)
+                if a == 1 and b == 1:
+                    tekstKastis("2", "Comic Sans", 45, 125, 125)
+                if a == 1 and b == 2:
+                    tekstKastis("2", "Comic Sans", 45, 175, 125)
+                if a == 1 and b == 3:
+                    tekstKastis("2", "Comic Sans", 45, 225, 125)
+                if a == 1 and b == 4:
+                    tekstKastis("2", "Comic Sans", 45, 275, 125)
+                if a == 1 and b == 5:
+                    tekstKastis("2", "Comic Sans", 45, 325, 125)
+                if a == 1 and b == 6:
+                    tekstKastis("2", "Comic Sans", 45, 375, 125)
+                if a == 1 and b == 7:
+                    tekstKastis("2", "Comic Sans", 45, 425, 125)
+                if a == 1 and b == 8:
+                    tekstKastis("2", "Comic Sans", 45, 475, 175)
+                #3.rida
+                if a == 2 and b == 0:
+                    tekstKastis("2", "Comic Sans", 45, 75, 175)
+                if a == 2 and b == 1:
+                    tekstKastis("2", "Comic Sans", 45, 125, 175)
+                if a == 2 and b == 2:
+                    tekstKastis("2", "Comic Sans", 45, 175, 175)
+                if a == 2 and b == 3:
+                    tekstKastis("2", "Comic Sans", 45, 225, 175)
+                if a == 2 and b == 4:
+                    tekstKastis("2", "Comic Sans", 45, 275, 175)
+                if a == 2 and b == 5:
+                    tekstKastis("2", "Comic Sans", 45, 325, 175)
+                if a == 2 and b == 6:
+                    tekstKastis("2", "Comic Sans", 45, 375, 175)
+                if a == 2 and b == 7:
+                    tekstKastis("2", "Comic Sans", 45, 425, 175)
+                if a == 2 and b == 8:
+                    tekstKastis("2", "Comic Sans", 45, 475, 175)
+                #4.rida
+                if a == 3 and b == 0:
+                    tekstKastis("2", "Comic Sans", 45, 75, 225)
+                if a == 3 and b == 1:
+                    tekstKastis("2", "Comic Sans", 45, 125, 225)
+                if a == 3 and b == 2:
+                    tekstKastis("2", "Comic Sans", 45, 175, 225)
+                if a == 3 and b == 3:
+                    tekstKastis("2", "Comic Sans", 45, 225, 225)
+                if a == 3 and b == 4:
+                    tekstKastis("2", "Comic Sans", 45, 275, 225)
+                if a == 3 and b == 5:
+                    tekstKastis("2", "Comic Sans", 45, 325, 225)
+                if a == 3 and b == 6:
+                    tekstKastis("2", "Comic Sans", 45, 375, 225)
+                if a == 3 and b == 7:
+                    tekstKastis("2", "Comic Sans", 45, 425, 225)
+                if a == 3 and b == 8:
+                    tekstKastis("2", "Comic Sans", 45, 475, 225)
+                #5.rida
+                if a == 4 and b == 0:
+                    tekstKastis("2", "Comic Sans", 45, 75, 275)
+                if a == 4 and b == 1:
+                    tekstKastis("2", "Comic Sans", 45, 125, 275)
+                if a == 4 and b == 2:
+                    tekstKastis("2", "Comic Sans", 45, 175, 275)
+                if a == 4 and b == 3:
+                    tekstKastis("2", "Comic Sans", 45, 225, 275)
+                if a == 4 and b == 4:
+                    tekstKastis("2", "Comic Sans", 45, 275, 275)
+                if a == 4 and b == 5:
+                    tekstKastis("2", "Comic Sans", 45, 325, 275)
+                if a == 4 and b == 6:
+                    tekstKastis("2", "Comic Sans", 45, 375, 275)
+                if a == 4 and b == 7:
+                    tekstKastis("2", "Comic Sans", 45, 425, 275)
+                if a == 4 and b == 8:
+                    tekstKastis("2", "Comic Sans", 45, 475, 275)
+                #6.rida
+                if a == 5 and b == 0:
+                    tekstKastis("2", "Comic Sans", 45, 75, 325)
+                if a == 5 and b == 1:
+                    tekstKastis("2", "Comic Sans", 45, 125, 325)
+                if a == 5 and b == 2:
+                    tekstKastis("2", "Comic Sans", 45, 175, 325)
+                if a == 5 and b == 3:
+                    tekstKastis("2", "Comic Sans", 45, 225, 325)
+                if a == 5 and b == 4:
+                    tekstKastis("2", "Comic Sans", 45, 275, 325)
+                if a == 5 and b == 5:
+                    tekstKastis("2", "Comic Sans", 45, 325, 325)
+                if a == 5 and b == 6:
+                    tekstKastis("2", "Comic Sans", 45, 375, 325)
+                if a == 5 and b == 7:
+                    tekstKastis("2", "Comic Sans", 45, 425, 325)
+                if a == 5 and b == 8:
+                    tekstKastis("2", "Comic Sans", 45, 475, 325)
+                #7.rida
+                if a == 6 and b == 0:
+                    tekstKastis("2", "Comic Sans", 45, 75, 375)
+                if a == 6 and b == 1:
+                    tekstKastis("2", "Comic Sans", 45, 125, 375)
+                if a == 6 and b == 2:
+                    tekstKastis("2", "Comic Sans", 45, 175, 375)
+                if a == 6 and b == 3:
+                    tekstKastis("2", "Comic Sans", 45, 225, 375)
+                if a == 6 and b == 4:
+                    tekstKastis("2", "Comic Sans", 45, 275, 375)
+                if a == 6 and b == 5:
+                    tekstKastis("2", "Comic Sans", 45, 325, 375)
+                if a == 6 and b == 6:
+                    tekstKastis("2", "Comic Sans", 45, 375, 375)
+                if a == 6 and b == 7:
+                    tekstKastis("2", "Comic Sans", 45, 425, 375)
+                if a == 6 and b == 8:
+                    tekstKastis("2", "Comic Sans", 45, 475, 375)
+                #8.rida
+                if a == 7 and b == 0:
+                    tekstKastis("2", "Comic Sans", 45, 75, 425)
+                if a == 7 and b == 1:
+                    tekstKastis("2", "Comic Sans", 45, 125, 425)
+                if a == 7 and b == 2:
+                    tekstKastis("2", "Comic Sans", 45, 175, 425)
+                if a == 7 and b == 3:
+                    tekstKastis("2", "Comic Sans", 45, 225, 425)
+                if a == 7 and b == 4:
+                    tekstKastis("2", "Comic Sans", 45, 275, 425)
+                if a == 7 and b == 5:
+                    tekstKastis("2", "Comic Sans", 45, 325, 425)
+                if a == 7 and b == 6:
+                    tekstKastis("2", "Comic Sans", 45, 375, 425)
+                if a == 7 and b == 7:
+                    tekstKastis("2", "Comic Sans", 45, 425, 425)
+                if a == 7 and b == 8:
+                    tekstKastis("2", "Comic Sans", 45, 475, 425)
+                #9.rida
+                if a == 8 and b == 0:
+                    tekstKastis("2", "Comic Sans", 45, 75, 475)
+                if a == 8 and b == 1:
+                    tekstKastis("2", "Comic Sans", 45, 125, 475)
+                if a == 8 and b == 2:
+                    tekstKastis("2", "Comic Sans", 45, 175, 475)
+                if a == 8 and b == 3:
+                    tekstKastis("2", "Comic Sans", 45, 225, 475)
+                if a == 8 and b == 4:
+                    tekstKastis("2", "Comic Sans", 45, 275, 475)
+                if a == 8 and b == 5:
+                    tekstKastis("2", "Comic Sans", 45, 325, 475)
+                if a == 8 and b == 6:
+                    tekstKastis("2", "Comic Sans", 45, 375, 475)
+                if a == 8 and b == 7:
+                    tekstKastis("2", "Comic Sans", 45, 425, 475)
+                if a == 8 and b == 8:
+                    tekstKastis("2", "Comic Sans", 45, 475, 475)
+
             if evendiasukoht(163,205,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 3
                 print(sudoku)
+                #numbrite blitimine 1.rida
+                if a == 0 and b == 0:
+                    tekstKastis("3", "Comic Sans", 45, 75, 75)
+                if a == 0 and b == 1:
+                    tekstKastis("3", "Comic Sans", 45, 125, 75)
+                if a == 0 and b == 2:
+                    tekstKastis("3", "Comic Sans", 45, 175, 75)
+                if a == 0 and b == 3:
+                    tekstKastis("3", "Comic Sans", 45, 225, 75)
+                if a == 0 and b == 4:
+                    tekstKastis("3", "Comic Sans", 45, 275, 75)
+                if a == 0 and b == 5:
+                    tekstKastis("3", "Comic Sans", 45, 325, 75)
+                if a == 0 and b == 6:
+                    tekstKastis("3", "Comic Sans", 45, 375, 75)
+                if a == 0 and b == 7:
+                    tekstKastis("3", "Comic Sans", 45, 425, 75)
+                if a == 0 and b == 8:
+                    tekstKastis("3", "Comic Sans", 45, 475, 75)
+                #2.rida
+                if a == 1 and b == 0:
+                    tekstKastis("3", "Comic Sans", 45, 75, 125)
+                if a == 1 and b == 1:
+                    tekstKastis("3", "Comic Sans", 45, 125, 125)
+                if a == 1 and b == 2:
+                    tekstKastis("3", "Comic Sans", 45, 175, 125)
+                if a == 1 and b == 3:
+                    tekstKastis("3", "Comic Sans", 45, 225, 125)
+                if a == 1 and b == 4:
+                    tekstKastis("3", "Comic Sans", 45, 275, 125)
+                if a == 1 and b == 5:
+                    tekstKastis("3", "Comic Sans", 45, 325, 125)
+                if a == 1 and b == 6:
+                    tekstKastis("3", "Comic Sans", 45, 375, 125)
+                if a == 1 and b == 7:
+                    tekstKastis("3", "Comic Sans", 45, 425, 125)
+                if a == 1 and b == 8:
+                    tekstKastis("3", "Comic Sans", 45, 475, 175)
+                #3.rida
+                if a == 2 and b == 0:
+                    tekstKastis("3", "Comic Sans", 45, 75, 175)
+                if a == 2 and b == 1:
+                    tekstKastis("3", "Comic Sans", 45, 125, 175)
+                if a == 2 and b == 2:
+                    tekstKastis("3", "Comic Sans", 45, 175, 175)
+                if a == 2 and b == 3:
+                    tekstKastis("3", "Comic Sans", 45, 225, 175)
+                if a == 2 and b == 4:
+                    tekstKastis("3", "Comic Sans", 45, 275, 175)
+                if a == 2 and b == 5:
+                    tekstKastis("3", "Comic Sans", 45, 325, 175)
+                if a == 2 and b == 6:
+                    tekstKastis("3", "Comic Sans", 45, 375, 175)
+                if a == 2 and b == 7:
+                    tekstKastis("3", "Comic Sans", 45, 425, 175)
+                if a == 2 and b == 8:
+                    tekstKastis("3", "Comic Sans", 45, 475, 175)
+                #4.rida
+                if a == 3 and b == 0:
+                    tekstKastis("3", "Comic Sans", 45, 75, 225)
+                if a == 3 and b == 1:
+                    tekstKastis("3", "Comic Sans", 45, 125, 225)
+                if a == 3 and b == 2:
+                    tekstKastis("3", "Comic Sans", 45, 175, 225)
+                if a == 3 and b == 3:
+                    tekstKastis("3", "Comic Sans", 45, 225, 225)
+                if a == 3 and b == 4:
+                    tekstKastis("3", "Comic Sans", 45, 275, 225)
+                if a == 3 and b == 5:
+                    tekstKastis("3", "Comic Sans", 45, 325, 225)
+                if a == 3 and b == 6:
+                    tekstKastis("3", "Comic Sans", 45, 375, 225)
+                if a == 3 and b == 7:
+                    tekstKastis("3", "Comic Sans", 45, 425, 225)
+                if a == 3 and b == 8:
+                    tekstKastis("3", "Comic Sans", 45, 475, 225)
+                #5.rida
+                if a == 4 and b == 0:
+                    tekstKastis("3", "Comic Sans", 45, 75, 275)
+                if a == 4 and b == 1:
+                    tekstKastis("3", "Comic Sans", 45, 125, 275)
+                if a == 4 and b == 2:
+                    tekstKastis("3", "Comic Sans", 45, 175, 275)
+                if a == 4 and b == 3:
+                    tekstKastis("3", "Comic Sans", 45, 225, 275)
+                if a == 4 and b == 4:
+                    tekstKastis("3", "Comic Sans", 45, 275, 275)
+                if a == 4 and b == 5:
+                    tekstKastis("3", "Comic Sans", 45, 325, 275)
+                if a == 4 and b == 6:
+                    tekstKastis("3", "Comic Sans", 45, 375, 275)
+                if a == 4 and b == 7:
+                    tekstKastis("3", "Comic Sans", 45, 425, 275)
+                if a == 4 and b == 8:
+                    tekstKastis("3", "Comic Sans", 45, 475, 275)
+                #6.rida
+                if a == 5 and b == 0:
+                    tekstKastis("3", "Comic Sans", 45, 75, 325)
+                if a == 5 and b == 1:
+                    tekstKastis("3", "Comic Sans", 45, 125, 325)
+                if a == 5 and b == 2:
+                    tekstKastis("3", "Comic Sans", 45, 175, 325)
+                if a == 5 and b == 3:
+                    tekstKastis("3", "Comic Sans", 45, 225, 325)
+                if a == 5 and b == 4:
+                    tekstKastis("3", "Comic Sans", 45, 275, 325)
+                if a == 5 and b == 5:
+                    tekstKastis("3", "Comic Sans", 45, 325, 325)
+                if a == 5 and b == 6:
+                    tekstKastis("3", "Comic Sans", 45, 375, 325)
+                if a == 5 and b == 7:
+                    tekstKastis("3", "Comic Sans", 45, 425, 325)
+                if a == 5 and b == 8:
+                    tekstKastis("3", "Comic Sans", 45, 475, 325)
+                #7.rida
+                if a == 6 and b == 0:
+                    tekstKastis("3", "Comic Sans", 45, 75, 375)
+                if a == 6 and b == 1:
+                    tekstKastis("3", "Comic Sans", 45, 125, 375)
+                if a == 6 and b == 2:
+                    tekstKastis("3", "Comic Sans", 45, 175, 375)
+                if a == 6 and b == 3:
+                    tekstKastis("3", "Comic Sans", 45, 225, 375)
+                if a == 6 and b == 4:
+                    tekstKastis("3", "Comic Sans", 45, 275, 375)
+                if a == 6 and b == 5:
+                    tekstKastis("3", "Comic Sans", 45, 325, 375)
+                if a == 6 and b == 6:
+                    tekstKastis("3", "Comic Sans", 45, 375, 375)
+                if a == 6 and b == 7:
+                    tekstKastis("3", "Comic Sans", 45, 425, 375)
+                if a == 6 and b == 8:
+                    tekstKastis("3", "Comic Sans", 45, 475, 375)
+                #8.rida
+                if a == 7 and b == 0:
+                    tekstKastis("3", "Comic Sans", 45, 75, 425)
+                if a == 7 and b == 1:
+                    tekstKastis("3", "Comic Sans", 45, 125, 425)
+                if a == 7 and b == 2:
+                    tekstKastis("3", "Comic Sans", 45, 175, 425)
+                if a == 7 and b == 3:
+                    tekstKastis("3", "Comic Sans", 45, 225, 425)
+                if a == 7 and b == 4:
+                    tekstKastis("3", "Comic Sans", 45, 275, 425)
+                if a == 7 and b == 5:
+                    tekstKastis("3", "Comic Sans", 45, 325, 425)
+                if a == 7 and b == 6:
+                    tekstKastis("3", "Comic Sans", 45, 375, 425)
+                if a == 7 and b == 7:
+                    tekstKastis("3", "Comic Sans", 45, 425, 425)
+                if a == 7 and b == 8:
+                    tekstKastis("3", "Comic Sans", 45, 475, 425)
+                #9.rida
+                if a == 8 and b == 0:
+                    tekstKastis("3", "Comic Sans", 45, 75, 475)
+                if a == 8 and b == 1:
+                    tekstKastis("3", "Comic Sans", 45, 125, 475)
+                if a == 8 and b == 2:
+                    tekstKastis("3", "Comic Sans", 45, 175, 475)
+                if a == 8 and b == 3:
+                    tekstKastis("3", "Comic Sans", 45, 225, 475)
+                if a == 8 and b == 4:
+                    tekstKastis("3", "Comic Sans", 45, 275, 475)
+                if a == 8 and b == 5:
+                    tekstKastis("3", "Comic Sans", 45, 325, 475)
+                if a == 8 and b == 6:
+                    tekstKastis("3", "Comic Sans", 45, 375, 475)
+                if a == 8 and b == 7:
+                    tekstKastis("3", "Comic Sans", 45, 425, 475)
+                if a == 8 and b == 8:
+                    tekstKastis("3", "Comic Sans", 45, 475, 475)
+
             if evendiasukoht(212,256,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 4
                 print(sudoku)
+                #numbrite blitimine 1.rida
+                if a == 0 and b == 0:
+                    tekstKastis("4", "Comic Sans", 45, 75, 75)
+                if a == 0 and b == 1:
+                    tekstKastis("4", "Comic Sans", 45, 125, 75)
+                if a == 0 and b == 2:
+                    tekstKastis("4", "Comic Sans", 45, 175, 75)
+                if a == 0 and b == 3:
+                    tekstKastis("4", "Comic Sans", 45, 225, 75)
+                if a == 0 and b == 4:
+                    tekstKastis("4", "Comic Sans", 45, 275, 75)
+                if a == 0 and b == 5:
+                    tekstKastis("4", "Comic Sans", 45, 325, 75)
+                if a == 0 and b == 6:
+                    tekstKastis("4", "Comic Sans", 45, 375, 75)
+                if a == 0 and b == 7:
+                    tekstKastis("4", "Comic Sans", 45, 425, 75)
+                if a == 0 and b == 8:
+                    tekstKastis("4", "Comic Sans", 45, 475, 75)
+                #2.rida
+                if a == 1 and b == 0:
+                    tekstKastis("4", "Comic Sans", 45, 75, 125)
+                if a == 1 and b == 1:
+                    tekstKastis("4", "Comic Sans", 45, 125, 125)
+                if a == 1 and b == 2:
+                    tekstKastis("4", "Comic Sans", 45, 175, 125)
+                if a == 1 and b == 3:
+                    tekstKastis("4", "Comic Sans", 45, 225, 125)
+                if a == 1 and b == 4:
+                    tekstKastis("4", "Comic Sans", 45, 275, 125)
+                if a == 1 and b == 5:
+                    tekstKastis("4", "Comic Sans", 45, 325, 125)
+                if a == 1 and b == 6:
+                    tekstKastis("4", "Comic Sans", 45, 375, 125)
+                if a == 1 and b == 7:
+                    tekstKastis("4", "Comic Sans", 45, 425, 125)
+                if a == 1 and b == 8:
+                    tekstKastis("4", "Comic Sans", 45, 475, 175)
+                #3.rida
+                if a == 2 and b == 0:
+                    tekstKastis("4", "Comic Sans", 45, 75, 175)
+                if a == 2 and b == 1:
+                    tekstKastis("4", "Comic Sans", 45, 125, 175)
+                if a == 2 and b == 2:
+                    tekstKastis("4", "Comic Sans", 45, 175, 175)
+                if a == 2 and b == 3:
+                    tekstKastis("4", "Comic Sans", 45, 225, 175)
+                if a == 2 and b == 4:
+                    tekstKastis("4", "Comic Sans", 45, 275, 175)
+                if a == 2 and b == 5:
+                    tekstKastis("4", "Comic Sans", 45, 325, 175)
+                if a == 2 and b == 6:
+                    tekstKastis("4", "Comic Sans", 45, 375, 175)
+                if a == 2 and b == 7:
+                    tekstKastis("4", "Comic Sans", 45, 425, 175)
+                if a == 2 and b == 8:
+                    tekstKastis("4", "Comic Sans", 45, 475, 175)
+                #4.rida
+                if a == 3 and b == 0:
+                    tekstKastis("4", "Comic Sans", 45, 75, 225)
+                if a == 3 and b == 1:
+                    tekstKastis("4", "Comic Sans", 45, 125, 225)
+                if a == 3 and b == 2:
+                    tekstKastis("4", "Comic Sans", 45, 175, 225)
+                if a == 3 and b == 3:
+                    tekstKastis("4", "Comic Sans", 45, 225, 225)
+                if a == 3 and b == 4:
+                    tekstKastis("4", "Comic Sans", 45, 275, 225)
+                if a == 3 and b == 5:
+                    tekstKastis("4", "Comic Sans", 45, 325, 225)
+                if a == 3 and b == 6:
+                    tekstKastis("4", "Comic Sans", 45, 375, 225)
+                if a == 3 and b == 7:
+                    tekstKastis("4", "Comic Sans", 45, 425, 225)
+                if a == 3 and b == 8:
+                    tekstKastis("4", "Comic Sans", 45, 475, 225)
+                #5.rida
+                if a == 4 and b == 0:
+                    tekstKastis("4", "Comic Sans", 45, 75, 275)
+                if a == 4 and b == 1:
+                    tekstKastis("4", "Comic Sans", 45, 125, 275)
+                if a == 4 and b == 2:
+                    tekstKastis("4", "Comic Sans", 45, 175, 275)
+                if a == 4 and b == 3:
+                    tekstKastis("4", "Comic Sans", 45, 225, 275)
+                if a == 4 and b == 4:
+                    tekstKastis("4", "Comic Sans", 45, 275, 275)
+                if a == 4 and b == 5:
+                    tekstKastis("4", "Comic Sans", 45, 325, 275)
+                if a == 4 and b == 6:
+                    tekstKastis("4", "Comic Sans", 45, 375, 275)
+                if a == 4 and b == 7:
+                    tekstKastis("4", "Comic Sans", 45, 425, 275)
+                if a == 4 and b == 8:
+                    tekstKastis("4", "Comic Sans", 45, 475, 275)
+                #6.rida
+                if a == 5 and b == 0:
+                    tekstKastis("4", "Comic Sans", 45, 75, 325)
+                if a == 5 and b == 1:
+                    tekstKastis("4", "Comic Sans", 45, 125, 325)
+                if a == 5 and b == 2:
+                    tekstKastis("4", "Comic Sans", 45, 175, 325)
+                if a == 5 and b == 3:
+                    tekstKastis("4", "Comic Sans", 45, 225, 325)
+                if a == 5 and b == 4:
+                    tekstKastis("4", "Comic Sans", 45, 275, 325)
+                if a == 5 and b == 5:
+                    tekstKastis("4", "Comic Sans", 45, 325, 325)
+                if a == 5 and b == 6:
+                    tekstKastis("4", "Comic Sans", 45, 375, 325)
+                if a == 5 and b == 7:
+                    tekstKastis("4", "Comic Sans", 45, 425, 325)
+                if a == 5 and b == 8:
+                    tekstKastis("4", "Comic Sans", 45, 475, 325)
+                #7.rida
+                if a == 6 and b == 0:
+                    tekstKastis("4", "Comic Sans", 45, 75, 375)
+                if a == 6 and b == 1:
+                    tekstKastis("4", "Comic Sans", 45, 125, 375)
+                if a == 6 and b == 2:
+                    tekstKastis("4", "Comic Sans", 45, 175, 375)
+                if a == 6 and b == 3:
+                    tekstKastis("4", "Comic Sans", 45, 225, 375)
+                if a == 6 and b == 4:
+                    tekstKastis("4", "Comic Sans", 45, 275, 375)
+                if a == 6 and b == 5:
+                    tekstKastis("4", "Comic Sans", 45, 325, 375)
+                if a == 6 and b == 6:
+                    tekstKastis("4", "Comic Sans", 45, 375, 375)
+                if a == 6 and b == 7:
+                    tekstKastis("4", "Comic Sans", 45, 425, 375)
+                if a == 6 and b == 8:
+                    tekstKastis("4", "Comic Sans", 45, 475, 375)
+                #8.rida
+                if a == 7 and b == 0:
+                    tekstKastis("4", "Comic Sans", 45, 75, 425)
+                if a == 7 and b == 1:
+                    tekstKastis("4", "Comic Sans", 45, 125, 425)
+                if a == 7 and b == 2:
+                    tekstKastis("4", "Comic Sans", 45, 175, 425)
+                if a == 7 and b == 3:
+                    tekstKastis("4", "Comic Sans", 45, 225, 425)
+                if a == 7 and b == 4:
+                    tekstKastis("4", "Comic Sans", 45, 275, 425)
+                if a == 7 and b == 5:
+                    tekstKastis("4", "Comic Sans", 45, 325, 425)
+                if a == 7 and b == 6:
+                    tekstKastis("4", "Comic Sans", 45, 375, 425)
+                if a == 7 and b == 7:
+                    tekstKastis("4", "Comic Sans", 45, 425, 425)
+                if a == 7 and b == 8:
+                    tekstKastis("4", "Comic Sans", 45, 475, 425)
+                #9.rida
+                if a == 8 and b == 0:
+                    tekstKastis("4", "Comic Sans", 45, 75, 475)
+                if a == 8 and b == 1:
+                    tekstKastis("4", "Comic Sans", 45, 125, 475)
+                if a == 8 and b == 2:
+                    tekstKastis("4", "Comic Sans", 45, 175, 475)
+                if a == 8 and b == 3:
+                    tekstKastis("4", "Comic Sans", 45, 225, 475)
+                if a == 8 and b == 4:
+                    tekstKastis("4", "Comic Sans", 45, 275, 475)
+                if a == 8 and b == 5:
+                    tekstKastis("4", "Comic Sans", 45, 325, 475)
+                if a == 8 and b == 6:
+                    tekstKastis("4", "Comic Sans", 45, 375, 475)
+                if a == 8 and b == 7:
+                    tekstKastis("4", "Comic Sans", 45, 425, 475)
+                if a == 8 and b == 8:
+                    tekstKastis("4", "Comic Sans", 45, 475, 475)
+
             if evendiasukoht(263,304,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 5
-                print(sudoku)
+                #numbrite blitimine 1.rida
+                if a == 0 and b == 0:
+                    tekstKastis("5", "Comic Sans", 45, 75, 75)
+                if a == 0 and b == 1:
+                    tekstKastis("5", "Comic Sans", 45, 125, 75)
+                if a == 0 and b == 2:
+                    tekstKastis("5", "Comic Sans", 45, 175, 75)
+                if a == 0 and b == 3:
+                    tekstKastis("5", "Comic Sans", 45, 225, 75)
+                if a == 0 and b == 4:
+                    tekstKastis("5", "Comic Sans", 45, 275, 75)
+                if a == 0 and b == 5:
+                    tekstKastis("5", "Comic Sans", 45, 325, 75)
+                if a == 0 and b == 6:
+                    tekstKastis("5", "Comic Sans", 45, 375, 75)
+                if a == 0 and b == 7:
+                    tekstKastis("5", "Comic Sans", 45, 425, 75)
+                if a == 0 and b == 8:
+                    tekstKastis("5", "Comic Sans", 45, 475, 75)
+                #2.rida
+                if a == 1 and b == 0:
+                    tekstKastis("5", "Comic Sans", 45, 75, 125)
+                if a == 1 and b == 1:
+                    tekstKastis("5", "Comic Sans", 45, 125, 125)
+                if a == 1 and b == 2:
+                    tekstKastis("5", "Comic Sans", 45, 175, 125)
+                if a == 1 and b == 3:
+                    tekstKastis("5", "Comic Sans", 45, 225, 125)
+                if a == 1 and b == 4:
+                    tekstKastis("5", "Comic Sans", 45, 275, 125)
+                if a == 1 and b == 5:
+                    tekstKastis("5", "Comic Sans", 45, 325, 125)
+                if a == 1 and b == 6:
+                    tekstKastis("5", "Comic Sans", 45, 375, 125)
+                if a == 1 and b == 7:
+                    tekstKastis("5", "Comic Sans", 45, 425, 125)
+                if a == 1 and b == 8:
+                    tekstKastis("5", "Comic Sans", 45, 475, 175)
+                #3.rida
+                if a == 2 and b == 0:
+                    tekstKastis("5", "Comic Sans", 45, 75, 175)
+                if a == 2 and b == 1:
+                    tekstKastis("5", "Comic Sans", 45, 125, 175)
+                if a == 2 and b == 2:
+                    tekstKastis("5", "Comic Sans", 45, 175, 175)
+                if a == 2 and b == 3:
+                    tekstKastis("5", "Comic Sans", 45, 225, 175)
+                if a == 2 and b == 4:
+                    tekstKastis("5", "Comic Sans", 45, 275, 175)
+                if a == 2 and b == 5:
+                    tekstKastis("5", "Comic Sans", 45, 325, 175)
+                if a == 2 and b == 6:
+                    tekstKastis("5", "Comic Sans", 45, 375, 175)
+                if a == 2 and b == 7:
+                    tekstKastis("5", "Comic Sans", 45, 425, 175)
+                if a == 2 and b == 8:
+                    tekstKastis("5", "Comic Sans", 45, 475, 175)
+                #4.rida
+                if a == 3 and b == 0:
+                    tekstKastis("5", "Comic Sans", 45, 75, 225)
+                if a == 3 and b == 1:
+                    tekstKastis("5", "Comic Sans", 45, 125, 225)
+                if a == 3 and b == 2:
+                    tekstKastis("5", "Comic Sans", 45, 175, 225)
+                if a == 3 and b == 3:
+                    tekstKastis("5", "Comic Sans", 45, 225, 225)
+                if a == 3 and b == 4:
+                    tekstKastis("5", "Comic Sans", 45, 275, 225)
+                if a == 3 and b == 5:
+                    tekstKastis("5", "Comic Sans", 45, 325, 225)
+                if a == 3 and b == 6:
+                    tekstKastis("5", "Comic Sans", 45, 375, 225)
+                if a == 3 and b == 7:
+                    tekstKastis("5", "Comic Sans", 45, 425, 225)
+                if a == 3 and b == 8:
+                    tekstKastis("5", "Comic Sans", 45, 475, 225)
+                #5.rida
+                if a == 4 and b == 0:
+                    tekstKastis("5", "Comic Sans", 45, 75, 275)
+                if a == 4 and b == 1:
+                    tekstKastis("5", "Comic Sans", 45, 125, 275)
+                if a == 4 and b == 2:
+                    tekstKastis("5", "Comic Sans", 45, 175, 275)
+                if a == 4 and b == 3:
+                    tekstKastis("5", "Comic Sans", 45, 225, 275)
+                if a == 4 and b == 4:
+                    tekstKastis("5", "Comic Sans", 45, 275, 275)
+                if a == 4 and b == 5:
+                    tekstKastis("5", "Comic Sans", 45, 325, 275)
+                if a == 4 and b == 6:
+                    tekstKastis("5", "Comic Sans", 45, 375, 275)
+                if a == 4 and b == 7:
+                    tekstKastis("5", "Comic Sans", 45, 425, 275)
+                if a == 4 and b == 8:
+                    tekstKastis("5", "Comic Sans", 45, 475, 275)
+                #6.rida
+                if a == 5 and b == 0:
+                    tekstKastis("5", "Comic Sans", 45, 75, 325)
+                if a == 5 and b == 1:
+                    tekstKastis("5", "Comic Sans", 45, 125, 325)
+                if a == 5 and b == 2:
+                    tekstKastis("5", "Comic Sans", 45, 175, 325)
+                if a == 5 and b == 3:
+                    tekstKastis("5", "Comic Sans", 45, 225, 325)
+                if a == 5 and b == 4:
+                    tekstKastis("5", "Comic Sans", 45, 275, 325)
+                if a == 5 and b == 5:
+                    tekstKastis("5", "Comic Sans", 45, 325, 325)
+                if a == 5 and b == 6:
+                    tekstKastis("5", "Comic Sans", 45, 375, 325)
+                if a == 5 and b == 7:
+                    tekstKastis("5", "Comic Sans", 45, 425, 325)
+                if a == 5 and b == 8:
+                    tekstKastis("5", "Comic Sans", 45, 475, 325)
+                #7.rida
+                if a == 6 and b == 0:
+                    tekstKastis("5", "Comic Sans", 45, 75, 375)
+                if a == 6 and b == 1:
+                    tekstKastis("5", "Comic Sans", 45, 125, 375)
+                if a == 6 and b == 2:
+                    tekstKastis("5", "Comic Sans", 45, 175, 375)
+                if a == 6 and b == 3:
+                    tekstKastis("5", "Comic Sans", 45, 225, 375)
+                if a == 6 and b == 4:
+                    tekstKastis("5", "Comic Sans", 45, 275, 375)
+                if a == 6 and b == 5:
+                    tekstKastis("5", "Comic Sans", 45, 325, 375)
+                if a == 6 and b == 6:
+                    tekstKastis("5", "Comic Sans", 45, 375, 375)
+                if a == 6 and b == 7:
+                    tekstKastis("5", "Comic Sans", 45, 425, 375)
+                if a == 6 and b == 8:
+                    tekstKastis("5", "Comic Sans", 45, 475, 375)
+                #8.rida
+                if a == 7 and b == 0:
+                    tekstKastis("5", "Comic Sans", 45, 75, 425)
+                if a == 7 and b == 1:
+                    tekstKastis("5", "Comic Sans", 45, 125, 425)
+                if a == 7 and b == 2:
+                    tekstKastis("5", "Comic Sans", 45, 175, 425)
+                if a == 7 and b == 3:
+                    tekstKastis("5", "Comic Sans", 45, 225, 425)
+                if a == 7 and b == 4:
+                    tekstKastis("5", "Comic Sans", 45, 275, 425)
+                if a == 7 and b == 5:
+                    tekstKastis("5", "Comic Sans", 45, 325, 425)
+                if a == 7 and b == 6:
+                    tekstKastis("5", "Comic Sans", 45, 375, 425)
+                if a == 7 and b == 7:
+                    tekstKastis("5", "Comic Sans", 45, 425, 425)
+                if a == 7 and b == 8:
+                    tekstKastis("5", "Comic Sans", 45, 475, 425)
+                #9.rida
+                if a == 8 and b == 0:
+                    tekstKastis("5", "Comic Sans", 45, 75, 475)
+                if a == 8 and b == 1:
+                    tekstKastis("5", "Comic Sans", 45, 125, 475)
+                if a == 8 and b == 2:
+                    tekstKastis("5", "Comic Sans", 45, 175, 475)
+                if a == 8 and b == 3:
+                    tekstKastis("5", "Comic Sans", 45, 225, 475)
+                if a == 8 and b == 4:
+                    tekstKastis("5", "Comic Sans", 45, 275, 475)
+                if a == 8 and b == 5:
+                    tekstKastis("5", "Comic Sans", 45, 325, 475)
+                if a == 8 and b == 6:
+                    tekstKastis("5", "Comic Sans", 45, 375, 475)
+                if a == 8 and b == 7:
+                    tekstKastis("5", "Comic Sans", 45, 425, 475)
+                if a == 8 and b == 8:
+                    tekstKastis("5", "Comic Sans", 45, 475, 475)
+
             if evendiasukoht(312,355,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 6
                 print(sudoku)
+                #numbrite blitimine 1.rida
+                if a == 0 and b == 0:
+                    tekstKastis("6", "Comic Sans", 45, 75, 75)
+                if a == 0 and b == 1:
+                    tekstKastis("6", "Comic Sans", 45, 125, 75)
+                if a == 0 and b == 2:
+                    tekstKastis("6", "Comic Sans", 45, 175, 75)
+                if a == 0 and b == 3:
+                    tekstKastis("6", "Comic Sans", 45, 225, 75)
+                if a == 0 and b == 4:
+                    tekstKastis("6", "Comic Sans", 45, 275, 75)
+                if a == 0 and b == 5:
+                    tekstKastis("6", "Comic Sans", 45, 325, 75)
+                if a == 0 and b == 6:
+                    tekstKastis("6", "Comic Sans", 45, 375, 75)
+                if a == 0 and b == 7:
+                    tekstKastis("6", "Comic Sans", 45, 425, 75)
+                if a == 0 and b == 8:
+                    tekstKastis("6", "Comic Sans", 45, 475, 75)
+                #2.rida
+                if a == 1 and b == 0:
+                    tekstKastis("6", "Comic Sans", 45, 75, 125)
+                if a == 1 and b == 1:
+                    tekstKastis("6", "Comic Sans", 45, 125, 125)
+                if a == 1 and b == 2:
+                    tekstKastis("6", "Comic Sans", 45, 175, 125)
+                if a == 1 and b == 3:
+                    tekstKastis("6", "Comic Sans", 45, 225, 125)
+                if a == 1 and b == 4:
+                    tekstKastis("6", "Comic Sans", 45, 275, 125)
+                if a == 1 and b == 5:
+                    tekstKastis("6", "Comic Sans", 45, 325, 125)
+                if a == 1 and b == 6:
+                    tekstKastis("6", "Comic Sans", 45, 375, 125)
+                if a == 1 and b == 7:
+                    tekstKastis("6", "Comic Sans", 45, 425, 125)
+                if a == 1 and b == 8:
+                    tekstKastis("6", "Comic Sans", 45, 475, 175)
+                #3.rida
+                if a == 2 and b == 0:
+                    tekstKastis("6", "Comic Sans", 45, 75, 175)
+                if a == 2 and b == 1:
+                    tekstKastis("6", "Comic Sans", 45, 125, 175)
+                if a == 2 and b == 2:
+                    tekstKastis("6", "Comic Sans", 45, 175, 175)
+                if a == 2 and b == 3:
+                    tekstKastis("6", "Comic Sans", 45, 225, 175)
+                if a == 2 and b == 4:
+                    tekstKastis("6", "Comic Sans", 45, 275, 175)
+                if a == 2 and b == 5:
+                    tekstKastis("6", "Comic Sans", 45, 325, 175)
+                if a == 2 and b == 6:
+                    tekstKastis("6", "Comic Sans", 45, 375, 175)
+                if a == 2 and b == 7:
+                    tekstKastis("6", "Comic Sans", 45, 425, 175)
+                if a == 2 and b == 8:
+                    tekstKastis("6", "Comic Sans", 45, 475, 175)
+                #4.rida
+                if a == 3 and b == 0:
+                    tekstKastis("6", "Comic Sans", 45, 75, 225)
+                if a == 3 and b == 1:
+                    tekstKastis("6", "Comic Sans", 45, 125, 225)
+                if a == 3 and b == 2:
+                    tekstKastis("6", "Comic Sans", 45, 175, 225)
+                if a == 3 and b == 3:
+                    tekstKastis("6", "Comic Sans", 45, 225, 225)
+                if a == 3 and b == 4:
+                    tekstKastis("6", "Comic Sans", 45, 275, 225)
+                if a == 3 and b == 5:
+                    tekstKastis("6", "Comic Sans", 45, 325, 225)
+                if a == 3 and b == 6:
+                    tekstKastis("6", "Comic Sans", 45, 375, 225)
+                if a == 3 and b == 7:
+                    tekstKastis("6", "Comic Sans", 45, 425, 225)
+                if a == 3 and b == 8:
+                    tekstKastis("6", "Comic Sans", 45, 475, 225)
+                #5.rida
+                if a == 4 and b == 0:
+                    tekstKastis("6", "Comic Sans", 45, 75, 275)
+                if a == 4 and b == 1:
+                    tekstKastis("6", "Comic Sans", 45, 125, 275)
+                if a == 4 and b == 2:
+                    tekstKastis("6", "Comic Sans", 45, 175, 275)
+                if a == 4 and b == 3:
+                    tekstKastis("6", "Comic Sans", 45, 225, 275)
+                if a == 4 and b == 4:
+                    tekstKastis("6", "Comic Sans", 45, 275, 275)
+                if a == 4 and b == 5:
+                    tekstKastis("6", "Comic Sans", 45, 325, 275)
+                if a == 4 and b == 6:
+                    tekstKastis("6", "Comic Sans", 45, 375, 275)
+                if a == 4 and b == 7:
+                    tekstKastis("6", "Comic Sans", 45, 425, 275)
+                if a == 4 and b == 8:
+                    tekstKastis("6", "Comic Sans", 45, 475, 275)
+                #6.rida
+                if a == 5 and b == 0:
+                    tekstKastis("6", "Comic Sans", 45, 75, 325)
+                if a == 5 and b == 1:
+                    tekstKastis("6", "Comic Sans", 45, 125, 325)
+                if a == 5 and b == 2:
+                    tekstKastis("6", "Comic Sans", 45, 175, 325)
+                if a == 5 and b == 3:
+                    tekstKastis("6", "Comic Sans", 45, 225, 325)
+                if a == 5 and b == 4:
+                    tekstKastis("6", "Comic Sans", 45, 275, 325)
+                if a == 5 and b == 5:
+                    tekstKastis("6", "Comic Sans", 45, 325, 325)
+                if a == 5 and b == 6:
+                    tekstKastis("6", "Comic Sans", 45, 375, 325)
+                if a == 5 and b == 7:
+                    tekstKastis("6", "Comic Sans", 45, 425, 325)
+                if a == 5 and b == 8:
+                    tekstKastis("6", "Comic Sans", 45, 475, 325)
+                #7.rida
+                if a == 6 and b == 0:
+                    tekstKastis("6", "Comic Sans", 45, 75, 375)
+                if a == 6 and b == 1:
+                    tekstKastis("6", "Comic Sans", 45, 125, 375)
+                if a == 6 and b == 2:
+                    tekstKastis("6", "Comic Sans", 45, 175, 375)
+                if a == 6 and b == 3:
+                    tekstKastis("6", "Comic Sans", 45, 225, 375)
+                if a == 6 and b == 4:
+                    tekstKastis("6", "Comic Sans", 45, 275, 375)
+                if a == 6 and b == 5:
+                    tekstKastis("6", "Comic Sans", 45, 325, 375)
+                if a == 6 and b == 6:
+                    tekstKastis("6", "Comic Sans", 45, 375, 375)
+                if a == 6 and b == 7:
+                    tekstKastis("6", "Comic Sans", 45, 425, 375)
+                if a == 6 and b == 8:
+                    tekstKastis("6", "Comic Sans", 45, 475, 375)
+                #8.rida
+                if a == 7 and b == 0:
+                    tekstKastis("6", "Comic Sans", 45, 75, 425)
+                if a == 7 and b == 1:
+                    tekstKastis("6", "Comic Sans", 45, 125, 425)
+                if a == 7 and b == 2:
+                    tekstKastis("6", "Comic Sans", 45, 175, 425)
+                if a == 7 and b == 3:
+                    tekstKastis("6", "Comic Sans", 45, 225, 425)
+                if a == 7 and b == 4:
+                    tekstKastis("6", "Comic Sans", 45, 275, 425)
+                if a == 7 and b == 5:
+                    tekstKastis("6", "Comic Sans", 45, 325, 425)
+                if a == 7 and b == 6:
+                    tekstKastis("6", "Comic Sans", 45, 375, 425)
+                if a == 7 and b == 7:
+                    tekstKastis("6", "Comic Sans", 45, 425, 425)
+                if a == 7 and b == 8:
+                    tekstKastis("6", "Comic Sans", 45, 475, 425)
+                #9.rida
+                if a == 8 and b == 0:
+                    tekstKastis("6", "Comic Sans", 45, 75, 475)
+                if a == 8 and b == 1:
+                    tekstKastis("6", "Comic Sans", 45, 125, 475)
+                if a == 8 and b == 2:
+                    tekstKastis("6", "Comic Sans", 45, 175, 475)
+                if a == 8 and b == 3:
+                    tekstKastis("6", "Comic Sans", 45, 225, 475)
+                if a == 8 and b == 4:
+                    tekstKastis("6", "Comic Sans", 45, 275, 475)
+                if a == 8 and b == 5:
+                    tekstKastis("6", "Comic Sans", 45, 325, 475)
+                if a == 8 and b == 6:
+                    tekstKastis("6", "Comic Sans", 45, 375, 475)
+                if a == 8 and b == 7:
+                    tekstKastis("6", "Comic Sans", 45, 425, 475)
+                if a == 8 and b == 8:
+                    tekstKastis("6", "Comic Sans", 45, 475, 475)
+
             if evendiasukoht(364,404,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 7
                 print(sudoku)
+                #numbrite blitimine 1.rida
+                if a == 0 and b == 0:
+                    tekstKastis("7", "Comic Sans", 45, 75, 75)
+                if a == 0 and b == 1:
+                    tekstKastis("7", "Comic Sans", 45, 125, 75)
+                if a == 0 and b == 2:
+                    tekstKastis("7", "Comic Sans", 45, 175, 75)
+                if a == 0 and b == 3:
+                    tekstKastis("7", "Comic Sans", 45, 225, 75)
+                if a == 0 and b == 4:
+                    tekstKastis("7", "Comic Sans", 45, 275, 75)
+                if a == 0 and b == 5:
+                    tekstKastis("7", "Comic Sans", 45, 325, 75)
+                if a == 0 and b == 6:
+                    tekstKastis("7", "Comic Sans", 45, 375, 75)
+                if a == 0 and b == 7:
+                    tekstKastis("7", "Comic Sans", 45, 425, 75)
+                if a == 0 and b == 8:
+                    tekstKastis("7", "Comic Sans", 45, 475, 75)
+                #2.rida
+                if a == 1 and b == 0:
+                    tekstKastis("7", "Comic Sans", 45, 75, 125)
+                if a == 1 and b == 1:
+                    tekstKastis("7", "Comic Sans", 45, 125, 125)
+                if a == 1 and b == 2:
+                    tekstKastis("7", "Comic Sans", 45, 175, 125)
+                if a == 1 and b == 3:
+                    tekstKastis("7", "Comic Sans", 45, 225, 125)
+                if a == 1 and b == 4:
+                    tekstKastis("7", "Comic Sans", 45, 275, 125)
+                if a == 1 and b == 5:
+                    tekstKastis("7", "Comic Sans", 45, 325, 125)
+                if a == 1 and b == 6:
+                    tekstKastis("7", "Comic Sans", 45, 375, 125)
+                if a == 1 and b == 7:
+                    tekstKastis("7", "Comic Sans", 45, 425, 125)
+                if a == 1 and b == 8:
+                    tekstKastis("7", "Comic Sans", 45, 475, 175)
+                #3.rida
+                if a == 2 and b == 0:
+                    tekstKastis("7", "Comic Sans", 45, 75, 175)
+                if a == 2 and b == 1:
+                    tekstKastis("7", "Comic Sans", 45, 125, 175)
+                if a == 2 and b == 2:
+                    tekstKastis("7", "Comic Sans", 45, 175, 175)
+                if a == 2 and b == 3:
+                    tekstKastis("7", "Comic Sans", 45, 225, 175)
+                if a == 2 and b == 4:
+                    tekstKastis("7", "Comic Sans", 45, 275, 175)
+                if a == 2 and b == 5:
+                    tekstKastis("7", "Comic Sans", 45, 325, 175)
+                if a == 2 and b == 6:
+                    tekstKastis("7", "Comic Sans", 45, 375, 175)
+                if a == 2 and b == 7:
+                    tekstKastis("7", "Comic Sans", 45, 425, 175)
+                if a == 2 and b == 8:
+                    tekstKastis("7", "Comic Sans", 45, 475, 175)
+                #4.rida
+                if a == 3 and b == 0:
+                    tekstKastis("7", "Comic Sans", 45, 75, 225)
+                if a == 3 and b == 1:
+                    tekstKastis("7", "Comic Sans", 45, 125, 225)
+                if a == 3 and b == 2:
+                    tekstKastis("7", "Comic Sans", 45, 175, 225)
+                if a == 3 and b == 3:
+                    tekstKastis("7", "Comic Sans", 45, 225, 225)
+                if a == 3 and b == 4:
+                    tekstKastis("7", "Comic Sans", 45, 275, 225)
+                if a == 3 and b == 5:
+                    tekstKastis("7", "Comic Sans", 45, 325, 225)
+                if a == 3 and b == 6:
+                    tekstKastis("7", "Comic Sans", 45, 375, 225)
+                if a == 3 and b == 7:
+                    tekstKastis("7", "Comic Sans", 45, 425, 225)
+                if a == 3 and b == 8:
+                    tekstKastis("7", "Comic Sans", 45, 475, 225)
+                #5.rida
+                if a == 4 and b == 0:
+                    tekstKastis("7", "Comic Sans", 45, 75, 275)
+                if a == 4 and b == 1:
+                    tekstKastis("7", "Comic Sans", 45, 125, 275)
+                if a == 4 and b == 2:
+                    tekstKastis("7", "Comic Sans", 45, 175, 275)
+                if a == 4 and b == 3:
+                    tekstKastis("7", "Comic Sans", 45, 225, 275)
+                if a == 4 and b == 4:
+                    tekstKastis("7", "Comic Sans", 45, 275, 275)
+                if a == 4 and b == 5:
+                    tekstKastis("7", "Comic Sans", 45, 325, 275)
+                if a == 4 and b == 6:
+                    tekstKastis("7", "Comic Sans", 45, 375, 275)
+                if a == 4 and b == 7:
+                    tekstKastis("7", "Comic Sans", 45, 425, 275)
+                if a == 4 and b == 8:
+                    tekstKastis("7", "Comic Sans", 45, 475, 275)
+                #6.rida
+                if a == 5 and b == 0:
+                    tekstKastis("7", "Comic Sans", 45, 75, 325)
+                if a == 5 and b == 1:
+                    tekstKastis("7", "Comic Sans", 45, 125, 325)
+                if a == 5 and b == 2:
+                    tekstKastis("7", "Comic Sans", 45, 175, 325)
+                if a == 5 and b == 3:
+                    tekstKastis("7", "Comic Sans", 45, 225, 325)
+                if a == 5 and b == 4:
+                    tekstKastis("7", "Comic Sans", 45, 275, 325)
+                if a == 5 and b == 5:
+                    tekstKastis("7", "Comic Sans", 45, 325, 325)
+                if a == 5 and b == 6:
+                    tekstKastis("7", "Comic Sans", 45, 375, 325)
+                if a == 5 and b == 7:
+                    tekstKastis("7", "Comic Sans", 45, 425, 325)
+                if a == 5 and b == 8:
+                    tekstKastis("7", "Comic Sans", 45, 475, 325)
+                #7.rida
+                if a == 6 and b == 0:
+                    tekstKastis("7", "Comic Sans", 45, 75, 375)
+                if a == 6 and b == 1:
+                    tekstKastis("7", "Comic Sans", 45, 125, 375)
+                if a == 6 and b == 2:
+                    tekstKastis("7", "Comic Sans", 45, 175, 375)
+                if a == 6 and b == 3:
+                    tekstKastis("7", "Comic Sans", 45, 225, 375)
+                if a == 6 and b == 4:
+                    tekstKastis("7", "Comic Sans", 45, 275, 375)
+                if a == 6 and b == 5:
+                    tekstKastis("7", "Comic Sans", 45, 325, 375)
+                if a == 6 and b == 6:
+                    tekstKastis("7", "Comic Sans", 45, 375, 375)
+                if a == 6 and b == 7:
+                    tekstKastis("7", "Comic Sans", 45, 425, 375)
+                if a == 6 and b == 8:
+                    tekstKastis("7", "Comic Sans", 45, 475, 375)
+                #8.rida
+                if a == 7 and b == 0:
+                    tekstKastis("7", "Comic Sans", 45, 75, 425)
+                if a == 7 and b == 1:
+                    tekstKastis("7", "Comic Sans", 45, 125, 425)
+                if a == 7 and b == 2:
+                    tekstKastis("7", "Comic Sans", 45, 175, 425)
+                if a == 7 and b == 3:
+                    tekstKastis("7", "Comic Sans", 45, 225, 425)
+                if a == 7 and b == 4:
+                    tekstKastis("7", "Comic Sans", 45, 275, 425)
+                if a == 7 and b == 5:
+                    tekstKastis("7", "Comic Sans", 45, 325, 425)
+                if a == 7 and b == 6:
+                    tekstKastis("7", "Comic Sans", 45, 375, 425)
+                if a == 7 and b == 7:
+                    tekstKastis("7", "Comic Sans", 45, 425, 425)
+                if a == 7 and b == 8:
+                    tekstKastis("7", "Comic Sans", 45, 475, 425)
+                #9.rida
+                if a == 8 and b == 0:
+                    tekstKastis("7", "Comic Sans", 45, 75, 475)
+                if a == 8 and b == 1:
+                    tekstKastis("7", "Comic Sans", 45, 125, 475)
+                if a == 8 and b == 2:
+                    tekstKastis("7", "Comic Sans", 45, 175, 475)
+                if a == 8 and b == 3:
+                    tekstKastis("7", "Comic Sans", 45, 225, 475)
+                if a == 8 and b == 4:
+                    tekstKastis("7", "Comic Sans", 45, 275, 475)
+                if a == 8 and b == 5:
+                    tekstKastis("7", "Comic Sans", 45, 325, 475)
+                if a == 8 and b == 6:
+                    tekstKastis("7", "Comic Sans", 45, 375, 475)
+                if a == 8 and b == 7:
+                    tekstKastis("7", "Comic Sans", 45, 425, 475)
+                if a == 8 and b == 8:
+                    tekstKastis("7", "Comic Sans", 45, 475, 475)
+
             if evendiasukoht(412,457,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 8
                 print(sudoku)
+                #numbrite blitimine 1.rida
+                if a == 0 and b == 0:
+                    tekstKastis("8", "Comic Sans", 45, 75, 75)
+                if a == 0 and b == 1:
+                    tekstKastis("8", "Comic Sans", 45, 125, 75)
+                if a == 0 and b == 2:
+                    tekstKastis("8", "Comic Sans", 45, 175, 75)
+                if a == 0 and b == 3:
+                    tekstKastis("8", "Comic Sans", 45, 225, 75)
+                if a == 0 and b == 4:
+                    tekstKastis("8", "Comic Sans", 45, 275, 75)
+                if a == 0 and b == 5:
+                    tekstKastis("8", "Comic Sans", 45, 325, 75)
+                if a == 0 and b == 6:
+                    tekstKastis("8", "Comic Sans", 45, 375, 75)
+                if a == 0 and b == 7:
+                    tekstKastis("8", "Comic Sans", 45, 425, 75)
+                if a == 0 and b == 8:
+                    tekstKastis("8", "Comic Sans", 45, 475, 75)
+                #2.rida
+                if a == 1 and b == 0:
+                    tekstKastis("8", "Comic Sans", 45, 75, 125)
+                if a == 1 and b == 1:
+                    tekstKastis("8", "Comic Sans", 45, 125, 125)
+                if a == 1 and b == 2:
+                    tekstKastis("8", "Comic Sans", 45, 175, 125)
+                if a == 1 and b == 3:
+                    tekstKastis("8", "Comic Sans", 45, 225, 125)
+                if a == 1 and b == 4:
+                    tekstKastis("8", "Comic Sans", 45, 275, 125)
+                if a == 1 and b == 5:
+                    tekstKastis("8", "Comic Sans", 45, 325, 125)
+                if a == 1 and b == 6:
+                    tekstKastis("8", "Comic Sans", 45, 375, 125)
+                if a == 1 and b == 7:
+                    tekstKastis("8", "Comic Sans", 45, 425, 125)
+                if a == 1 and b == 8:
+                    tekstKastis("8", "Comic Sans", 45, 475, 175)
+                #3.rida
+                if a == 2 and b == 0:
+                    tekstKastis("8", "Comic Sans", 45, 75, 175)
+                if a == 2 and b == 1:
+                    tekstKastis("8", "Comic Sans", 45, 125, 175)
+                if a == 2 and b == 2:
+                    tekstKastis("8", "Comic Sans", 45, 175, 175)
+                if a == 2 and b == 3:
+                    tekstKastis("8", "Comic Sans", 45, 225, 175)
+                if a == 2 and b == 4:
+                    tekstKastis("8", "Comic Sans", 45, 275, 175)
+                if a == 2 and b == 5:
+                    tekstKastis("8", "Comic Sans", 45, 325, 175)
+                if a == 2 and b == 6:
+                    tekstKastis("8", "Comic Sans", 45, 375, 175)
+                if a == 2 and b == 7:
+                    tekstKastis("8", "Comic Sans", 45, 425, 175)
+                if a == 2 and b == 8:
+                    tekstKastis("8", "Comic Sans", 45, 475, 175)
+                #4.rida
+                if a == 3 and b == 0:
+                    tekstKastis("8", "Comic Sans", 45, 75, 225)
+                if a == 3 and b == 1:
+                    tekstKastis("8", "Comic Sans", 45, 125, 225)
+                if a == 3 and b == 2:
+                    tekstKastis("8", "Comic Sans", 45, 175, 225)
+                if a == 3 and b == 3:
+                    tekstKastis("8", "Comic Sans", 45, 225, 225)
+                if a == 3 and b == 4:
+                    tekstKastis("8", "Comic Sans", 45, 275, 225)
+                if a == 3 and b == 5:
+                    tekstKastis("8", "Comic Sans", 45, 325, 225)
+                if a == 3 and b == 6:
+                    tekstKastis("8", "Comic Sans", 45, 375, 225)
+                if a == 3 and b == 7:
+                    tekstKastis("8", "Comic Sans", 45, 425, 225)
+                if a == 3 and b == 8:
+                    tekstKastis("8", "Comic Sans", 45, 475, 225)
+                #5.rida
+                if a == 4 and b == 0:
+                    tekstKastis("8", "Comic Sans", 45, 75, 275)
+                if a == 4 and b == 1:
+                    tekstKastis("8", "Comic Sans", 45, 125, 275)
+                if a == 4 and b == 2:
+                    tekstKastis("8", "Comic Sans", 45, 175, 275)
+                if a == 4 and b == 3:
+                    tekstKastis("8", "Comic Sans", 45, 225, 275)
+                if a == 4 and b == 4:
+                    tekstKastis("8", "Comic Sans", 45, 275, 275)
+                if a == 4 and b == 5:
+                    tekstKastis("8", "Comic Sans", 45, 325, 275)
+                if a == 4 and b == 6:
+                    tekstKastis("8", "Comic Sans", 45, 375, 275)
+                if a == 4 and b == 7:
+                    tekstKastis("8", "Comic Sans", 45, 425, 275)
+                if a == 4 and b == 8:
+                    tekstKastis("8", "Comic Sans", 45, 475, 275)
+                #6.rida
+                if a == 5 and b == 0:
+                    tekstKastis("8", "Comic Sans", 45, 75, 325)
+                if a == 5 and b == 1:
+                    tekstKastis("8", "Comic Sans", 45, 125, 325)
+                if a == 5 and b == 2:
+                    tekstKastis("8", "Comic Sans", 45, 175, 325)
+                if a == 5 and b == 3:
+                    tekstKastis("8", "Comic Sans", 45, 225, 325)
+                if a == 5 and b == 4:
+                    tekstKastis("8", "Comic Sans", 45, 275, 325)
+                if a == 5 and b == 5:
+                    tekstKastis("8", "Comic Sans", 45, 325, 325)
+                if a == 5 and b == 6:
+                    tekstKastis("8", "Comic Sans", 45, 375, 325)
+                if a == 5 and b == 7:
+                    tekstKastis("8", "Comic Sans", 45, 425, 325)
+                if a == 5 and b == 8:
+                    tekstKastis("8", "Comic Sans", 45, 475, 325)
+                #7.rida
+                if a == 6 and b == 0:
+                    tekstKastis("8", "Comic Sans", 45, 75, 375)
+                if a == 6 and b == 1:
+                    tekstKastis("8", "Comic Sans", 45, 125, 375)
+                if a == 6 and b == 2:
+                    tekstKastis("8", "Comic Sans", 45, 175, 375)
+                if a == 6 and b == 3:
+                    tekstKastis("8", "Comic Sans", 45, 225, 375)
+                if a == 6 and b == 4:
+                    tekstKastis("8", "Comic Sans", 45, 275, 375)
+                if a == 6 and b == 5:
+                    tekstKastis("8", "Comic Sans", 45, 325, 375)
+                if a == 6 and b == 6:
+                    tekstKastis("8", "Comic Sans", 45, 375, 375)
+                if a == 6 and b == 7:
+                    tekstKastis("8", "Comic Sans", 45, 425, 375)
+                if a == 6 and b == 8:
+                    tekstKastis("8", "Comic Sans", 45, 475, 375)
+                #8.rida
+                if a == 7 and b == 0:
+                    tekstKastis("8", "Comic Sans", 45, 75, 425)
+                if a == 7 and b == 1:
+                    tekstKastis("8", "Comic Sans", 45, 125, 425)
+                if a == 7 and b == 2:
+                    tekstKastis("8", "Comic Sans", 45, 175, 425)
+                if a == 7 and b == 3:
+                    tekstKastis("8", "Comic Sans", 45, 225, 425)
+                if a == 7 and b == 4:
+                    tekstKastis("8", "Comic Sans", 45, 275, 425)
+                if a == 7 and b == 5:
+                    tekstKastis("8", "Comic Sans", 45, 325, 425)
+                if a == 7 and b == 6:
+                    tekstKastis("8", "Comic Sans", 45, 375, 425)
+                if a == 7 and b == 7:
+                    tekstKastis("8", "Comic Sans", 45, 425, 425)
+                if a == 7 and b == 8:
+                    tekstKastis("8", "Comic Sans", 45, 475, 425)
+                #9.rida
+                if a == 8 and b == 0:
+                    tekstKastis("8", "Comic Sans", 45, 75, 475)
+                if a == 8 and b == 1:
+                    tekstKastis("8", "Comic Sans", 45, 125, 475)
+                if a == 8 and b == 2:
+                    tekstKastis("8", "Comic Sans", 45, 175, 475)
+                if a == 8 and b == 3:
+                    tekstKastis("8", "Comic Sans", 45, 225, 475)
+                if a == 8 and b == 4:
+                    tekstKastis("8", "Comic Sans", 45, 275, 475)
+                if a == 8 and b == 5:
+                    tekstKastis("8", "Comic Sans", 45, 325, 475)
+                if a == 8 and b == 6:
+                    tekstKastis("8", "Comic Sans", 45, 375, 475)
+                if a == 8 and b == 7:
+                    tekstKastis("8", "Comic Sans", 45, 425, 475)
+                if a == 8 and b == 8:
+                    tekstKastis("8", "Comic Sans", 45, 475, 475)
+
             if evendiasukoht(464,504,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 9
                 print(sudoku)
-        
+                #numbrite blitimine 1.rida
+                if a == 0 and b == 0:
+                    tekstKastis("9", "Comic Sans", 45, 75, 75)
+                if a == 0 and b == 1:
+                    tekstKastis("9", "Comic Sans", 45, 125, 75)
+                if a == 0 and b == 2:
+                    tekstKastis("9", "Comic Sans", 45, 175, 75)
+                if a == 0 and b == 3:
+                    tekstKastis("9", "Comic Sans", 45, 225, 75)
+                if a == 0 and b == 4:
+                    tekstKastis("9", "Comic Sans", 45, 275, 75)
+                if a == 0 and b == 5:
+                    tekstKastis("9", "Comic Sans", 45, 325, 75)
+                if a == 0 and b == 6:
+                    tekstKastis("9", "Comic Sans", 45, 375, 75)
+                if a == 0 and b == 7:
+                    tekstKastis("9", "Comic Sans", 45, 425, 75)
+                if a == 0 and b == 8:
+                    tekstKastis("9", "Comic Sans", 45, 475, 75)
+                #2.rida
+                if a == 1 and b == 0:
+                    tekstKastis("9", "Comic Sans", 45, 75, 125)
+                if a == 1 and b == 1:
+                    tekstKastis("9", "Comic Sans", 45, 125, 125)
+                if a == 1 and b == 2:
+                    tekstKastis("9", "Comic Sans", 45, 175, 125)
+                if a == 1 and b == 3:
+                    tekstKastis("9", "Comic Sans", 45, 225, 125)
+                if a == 1 and b == 4:
+                    tekstKastis("9", "Comic Sans", 45, 275, 125)
+                if a == 1 and b == 5:
+                    tekstKastis("9", "Comic Sans", 45, 325, 125)
+                if a == 1 and b == 6:
+                    tekstKastis("9", "Comic Sans", 45, 375, 125)
+                if a == 1 and b == 7:
+                    tekstKastis("9", "Comic Sans", 45, 425, 125)
+                if a == 1 and b == 8:
+                    tekstKastis("9", "Comic Sans", 45, 475, 175)
+                #3.rida
+                if a == 2 and b == 0:
+                    tekstKastis("9", "Comic Sans", 45, 75, 175)
+                if a == 2 and b == 1:
+                    tekstKastis("9", "Comic Sans", 45, 125, 175)
+                if a == 2 and b == 2:
+                    tekstKastis("9", "Comic Sans", 45, 175, 175)
+                if a == 2 and b == 3:
+                    tekstKastis("9", "Comic Sans", 45, 225, 175)
+                if a == 2 and b == 4:
+                    tekstKastis("9", "Comic Sans", 45, 275, 175)
+                if a == 2 and b == 5:
+                    tekstKastis("9", "Comic Sans", 45, 325, 175)
+                if a == 2 and b == 6:
+                    tekstKastis("9", "Comic Sans", 45, 375, 175)
+                if a == 2 and b == 7:
+                    tekstKastis("9", "Comic Sans", 45, 425, 175)
+                if a == 2 and b == 8:
+                    tekstKastis("9", "Comic Sans", 45, 475, 175)
+                #4.rida
+                if a == 3 and b == 0:
+                    tekstKastis("9", "Comic Sans", 45, 75, 225)
+                if a == 3 and b == 1:
+                    tekstKastis("9", "Comic Sans", 45, 125, 225)
+                if a == 3 and b == 2:
+                    tekstKastis("9", "Comic Sans", 45, 175, 225)
+                if a == 3 and b == 3:
+                    tekstKastis("9", "Comic Sans", 45, 225, 225)
+                if a == 3 and b == 4:
+                    tekstKastis("9", "Comic Sans", 45, 275, 225)
+                if a == 3 and b == 5:
+                    tekstKastis("9", "Comic Sans", 45, 325, 225)
+                if a == 3 and b == 6:
+                    tekstKastis("9", "Comic Sans", 45, 375, 225)
+                if a == 3 and b == 7:
+                    tekstKastis("9", "Comic Sans", 45, 425, 225)
+                if a == 3 and b == 8:
+                    tekstKastis("9", "Comic Sans", 45, 475, 225)
+                #5.rida
+                if a == 4 and b == 0:
+                    tekstKastis("9", "Comic Sans", 45, 75, 275)
+                if a == 4 and b == 1:
+                    tekstKastis("9", "Comic Sans", 45, 125, 275)
+                if a == 4 and b == 2:
+                    tekstKastis("9", "Comic Sans", 45, 175, 275)
+                if a == 4 and b == 3:
+                    tekstKastis("9", "Comic Sans", 45, 225, 275)
+                if a == 4 and b == 4:
+                    tekstKastis("9", "Comic Sans", 45, 275, 275)
+                if a == 4 and b == 5:
+                    tekstKastis("9", "Comic Sans", 45, 325, 275)
+                if a == 4 and b == 6:
+                    tekstKastis("9", "Comic Sans", 45, 375, 275)
+                if a == 4 and b == 7:
+                    tekstKastis("9", "Comic Sans", 45, 425, 275)
+                if a == 4 and b == 8:
+                    tekstKastis("9", "Comic Sans", 45, 475, 275)
+                #6.rida
+                if a == 5 and b == 0:
+                    tekstKastis("9", "Comic Sans", 45, 75, 325)
+                if a == 5 and b == 1:
+                    tekstKastis("9", "Comic Sans", 45, 125, 325)
+                if a == 5 and b == 2:
+                    tekstKastis("9", "Comic Sans", 45, 175, 325)
+                if a == 5 and b == 3:
+                    tekstKastis("9", "Comic Sans", 45, 225, 325)
+                if a == 5 and b == 4:
+                    tekstKastis("9", "Comic Sans", 45, 275, 325)
+                if a == 5 and b == 5:
+                    tekstKastis("9", "Comic Sans", 45, 325, 325)
+                if a == 5 and b == 6:
+                    tekstKastis("9", "Comic Sans", 45, 375, 325)
+                if a == 5 and b == 7:
+                    tekstKastis("9", "Comic Sans", 45, 425, 325)
+                if a == 5 and b == 8:
+                    tekstKastis("9", "Comic Sans", 45, 475, 325)
+                #7.rida
+                if a == 6 and b == 0:
+                    tekstKastis("9", "Comic Sans", 45, 75, 375)
+                if a == 6 and b == 1:
+                    tekstKastis("9", "Comic Sans", 45, 125, 375)
+                if a == 6 and b == 2:
+                    tekstKastis("9", "Comic Sans", 45, 175, 375)
+                if a == 6 and b == 3:
+                    tekstKastis("9", "Comic Sans", 45, 225, 375)
+                if a == 6 and b == 4:
+                    tekstKastis("9", "Comic Sans", 45, 275, 375)
+                if a == 6 and b == 5:
+                    tekstKastis("9", "Comic Sans", 45, 325, 375)
+                if a == 6 and b == 6:
+                    tekstKastis("9", "Comic Sans", 45, 375, 375)
+                if a == 6 and b == 7:
+                    tekstKastis("9", "Comic Sans", 45, 425, 375)
+                if a == 6 and b == 8:
+                    tekstKastis("9", "Comic Sans", 45, 475, 375)
+                #8.rida
+                if a == 7 and b == 0:
+                    tekstKastis("9", "Comic Sans", 45, 75, 425)
+                if a == 7 and b == 1:
+                    tekstKastis("9", "Comic Sans", 45, 125, 425)
+                if a == 7 and b == 2:
+                    tekstKastis("9", "Comic Sans", 45, 175, 425)
+                if a == 7 and b == 3:
+                    tekstKastis("9", "Comic Sans", 45, 225, 425)
+                if a == 7 and b == 4:
+                    tekstKastis("9", "Comic Sans", 45, 275, 425)
+                if a == 7 and b == 5:
+                    tekstKastis("9", "Comic Sans", 45, 325, 425)
+                if a == 7 and b == 6:
+                    tekstKastis("9", "Comic Sans", 45, 375, 425)
+                if a == 7 and b == 7:
+                    tekstKastis("9", "Comic Sans", 45, 425, 425)
+                if a == 7 and b == 8:
+                    tekstKastis("9", "Comic Sans", 45, 475, 425)
+                #9.rida
+                if a == 8 and b == 0:
+                    tekstKastis("9", "Comic Sans", 45, 75, 475)
+                if a == 8 and b == 1:
+                    tekstKastis("9", "Comic Sans", 45, 125, 475)
+                if a == 8 and b == 2:
+                    tekstKastis("9", "Comic Sans", 45, 175, 475)
+                if a == 8 and b == 3:
+                    tekstKastis("9", "Comic Sans", 45, 225, 475)
+                if a == 8 and b == 4:
+                    tekstKastis("9", "Comic Sans", 45, 275, 475)
+                if a == 8 and b == 5:
+                    tekstKastis("9", "Comic Sans", 45, 325, 475)
+                if a == 8 and b == 6:
+                    tekstKastis("9", "Comic Sans", 45, 375, 475)
+                if a == 8 and b == 7:
+                    tekstKastis("9", "Comic Sans", 45, 425, 475)
+                if a == 8 and b == 8:
+                    tekstKastis("9", "Comic Sans", 45, 475, 475)
+
+                
+
         pygame.display.flip()
 
 def homescreen():
