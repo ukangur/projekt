@@ -9,8 +9,6 @@ y=50
 os.environ["SDL_VIDEO_WINDOW_POS"] = "%d,%d" % (x,y)
 
 pygame.init()
-pygame.font.Font("comicsans.ttf",20)
-pygame.font.Font("bauhaus.ttf",10)
 
 global ekraaniPind
 ekraaniPind = pygame.display.set_mode( (720, 720) )
@@ -30,8 +28,6 @@ hardLahendus = [[8,1,9,7,6,3,4,5,2],[3,4,6,1,5,2,9,8,7],[2,5,7,8,9,4,1,3,6],[7,9
 
 võimatuSudoku = [[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0]]
 võimatuLahendus = [[3,4,8,1,5,6,7,9,2],[6,2,9,3,7,4,8,5,1],[1,7,5,8,9,2,3,6,4],[4,6,7,2,3,1,9,8,5],[2,8,3,5,6,9,1,4,7],[9,5,1,7,4,8,6,2,3],[5,1,4,9,8,3,2,7,6],[8,3,6,4,2,7,5,1,9],[7,9,2,6,1,5,4,3,8]]
-
-
 
 #defineerin värve
 must = (0,0,0)
@@ -1970,8 +1966,6 @@ def mänguekraan(sudoku,lahendus, väljak):#poolik
                     tekstKastis("9", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("9", "Comic Sans", 45, 475, 475)
-
-                
 
         pygame.display.flip()
 
