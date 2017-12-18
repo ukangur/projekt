@@ -1,6 +1,7 @@
 import pygame, os
 from tkinter import *
 from tkinter import messagebox
+from pygame.locals import *
 
 #märgin, kus kohas avaneb pygame'i aken kuvaril
 x=50
@@ -8,6 +9,7 @@ y=50
 os.environ["SDL_VIDEO_WINDOW_POS"] = "%d,%d" % (x,y)
 
 pygame.init()
+pygame.font.init()
 
 global ekraaniPind
 ekraaniPind = pygame.display.set_mode( (720, 720) )
