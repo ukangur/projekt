@@ -9,7 +9,8 @@ y=50
 os.environ["SDL_VIDEO_WINDOW_POS"] = "%d,%d" % (x,y)
 
 pygame.init()
-pygame.font.init()
+pygame.font.Font("comicsans.ttf",20)
+pygame.font.Font("bauhaus.ttf",10)
 
 global ekraaniPind
 ekraaniPind = pygame.display.set_mode( (720, 720) )
