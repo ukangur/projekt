@@ -1,4 +1,6 @@
 import pygame, os
+from tkinter import *
+from tkinter import messagebox
 
 #märgin, kus kohas avaneb pygame'i aken kuvaril
 x=50
@@ -13,8 +15,20 @@ ekraaniPind = pygame.display.set_mode( (720, 720) )
 global heli
 heli = False
 
+#sudokud
+lihtneSudoku = [[7,0,0,0,0,0,6,0,1],[0,0,9,7,0,0,0,0,0],[0,0,0,0,5,0,9,3,0],[8,6,0,0,3,0,0,0,0],[4,0,3,0,0,0,0,0,9],[0,0,0,0,4,0,0,2,3],[0,8,5,0,2,0,0,0,0],[0,0,0,0,7,8,1,0,0],[9,0,1,0,0,0,0,0,9]]
+lihtneLahendus = [[7,5,8,3,9,2,6,4,1],[3,4,9,7,1,6,5,8,2],[1,2,6,8,5,4,9,3,7],[8,6,2,9,3,7,4,1,5],[4,1,3,2,8,5,7,6,9],[5,9,7,6,4,1,8,2,3],[6,8,5,1,2,9,3,7,4],[2,3,4,5,7,8,1,9,6],[9,7,1,4,6,3,2,5,8]]
 
-lihtneSudoku = sudoku = [[7,0,0,0,0,0,6,0,1],[0,0,9,7,0,0,0,0,0],[0,0,0,0,5,0,9,3,0],[8,6,0,0,3,0,0,0,0],[4,0,3,0,0,0,0,0,9],[0,0,0,0,4,0,0,2,3],[0,8,5,0,2,0,0,0,0],[0,0,0,0,7,8,1,0,0],[9,0,1,0,0,0,0,0,9]]
+mediumSudoku = [[0,8,0,0,0,0,7,0,0],[5,0,0,4,6,0,1,0,0],[0,0,0,0,2,0,0,4,0],[0,4,0,3,0,0,0,9,1],[6,0,0,0,0,0,0,0,8],[2,9,0,0,0,8,0,7,0],[0,1,0,0,9,0,0,0,0],[0,0,4,0,8,3,0,0,5],[0,0,6,0,0,0,0,2,0]]
+mediumLahendus = [[4,8,2,9,3,1,7,5,6],[5,3,9,4,6,7,1,8,2],[1,6,7,8,2,5,3,4,9],[8,4,5,3,7,6,2,9,1],[6,7,1,2,4,9,5,3,8],[2,9,3,1,5,8,6,7,4],[3,1,8,5,9,2,4,6,7],[7,2,4,6,8,3,9,1,5],[9,5,6,7,1,4,8,2,3]]
+
+hardSudoku = [[8,1,0,0,6,3,0,0,0],[3,0,0,0,0,0,0,0,7],[0,0,7,0,0,4,0,0,0],[0,0,0,0,0,8,3,0,0],[0,0,2,0,0,0,6,0,0],[0,0,4,9,0,0,0,0,0],[0,0,0,5,0,0,7,0,0],[4,7,0,0,0,0,0,0,5],[0,0,0,2,7,0,0,9,4]]
+hardLahendus = [[8,1,9,7,6,3,4,5,2],[3,4,6,1,5,2,9,8,7],[2,5,7,8,9,4,1,3,6],[7,9,5,6,2,8,3,4,1],[1,8,2,4,3,5,6,7,9],[6,3,4,9,1,7,5,2,8],[9,2,8,5,4,6,7,1,3],[4,7,1,3,8,9,2,6,5],[5,6,3,2,7,1,8,9,4]]
+
+võimatuSudoku = [[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0]]
+võimatuLahendus = [[3,4,8,1,5,6,7,9,2],[6,2,9,3,7,4,8,5,1],[1,7,5,8,9,2,3,6,4],[4,6,7,2,3,1,9,8,5],[2,8,3,5,6,9,1,4,7],[9,5,1,7,4,8,6,2,3],[5,1,4,9,8,3,2,7,6],[8,3,6,4,2,7,5,1,9],[7,9,2,6,1,5,4,3,8]]
+
+
 
 #defineerin värve
 must = (0,0,0)
@@ -140,33 +154,40 @@ def raskusastmed():
             eventx, eventy = pygame.mouse.get_pos()
             print(eventx, eventy)
             if evendiasukoht(210,530,55,145,eventx,eventy):
-                mänguekraan(lihtneSudoku)
+                mänguekraan(lihtneSudoku,lihtneLahendus, "sudokupohieasy.png")
                 break
             elif evendiasukoht(210,530,205,295,eventx,eventy):
-                mänguekraan()
+                mänguekraan(mediumSudoku, mediumLahendus, "sudokupohimedium.png")
                 break
             elif evendiasukoht(210,530,350,445,eventx,eventy):
-                mänguekraan()
+                mänguekraan(hardSudoku, hardLahendus, "sudokupohihard.png")
                 break
             elif evendiasukoht(210,530,500,590,eventx,eventy):
-                mänguekraan()
+                mänguekraan(võimatuSudoku, võimatuLahendus, "sudokupohiextreme.png")
                 break
             elif evendiasukoht(39,195,617,696,eventx,eventy):
                 homescreen()
                 break
 
-        
-def mänguekraan(sudoku):#poolik
+def kontrollija(sudoku, lahendus):
+    if sudoku == lahendus:
+        return True
+    else:
+        return False
+
+def mänguekraan(sudoku,lahendus, väljak):#poolik
     #ekraani atribuudid
-    #sudoku = [[7,0,0,0,0,0,6,0,1],[0,0,9,7,0,0,0,0,0],[0,0,0,0,5,0,9,3,0],[8,6,0,0,3,0,0,0,0],[4,0,3,0,0,0,0,0,9],[0,0,0,0,4,0,0,2,3],[0,8,5,0,2,0,0,0,0],[0,0,0,0,7,8,1,0,0],[9,0,1,0,0,0,0,0,9]]
     valik = 0
     ekraaniPind.fill(valge)
-    pilt("sudokupohieasy.png",0,0)
+    pilt(väljak,0,0)
     #tagasi
     tekstKastis("Tagasi", "Bauhaus 93", 50, 50, 620)
     #kontrolli nupp
     tekstKastis("Kontrolli", "Bauhaus 93", 40, 550, 115)
     clock = pygame.time.Clock()
+    
+    if heli:
+        muusika("helilaul1.mp3")
     
     while True:
         event = pygame.event.poll()
@@ -180,7 +201,16 @@ def mänguekraan(sudoku):#poolik
                 raskusastmed()
                 break
             elif evendiasukoht(527,720,89,190,eventx,eventy):
-                continue
+                if kontrollija(sudoku, lahendus):
+                    if heli:
+                        muusika("celebration.mp3")
+                    else:
+                        continue
+                else:
+                    if heli:
+                        muusika
+                    Tk().wm_withdraw()
+                    messagebox.showinfo("Harjuta veel, nub", "Sa oled kõik valesti teinud!!!")
                
             #sudoku ruudud 1.rida   
             if evendiasukoht(61,106,64,107,eventx,eventy):
@@ -366,7 +396,6 @@ def mänguekraan(sudoku):#poolik
             if evendiasukoht(62,108,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 1
-                print(sudoku)
                 #numbrite blitimine 1.rida
                 if a == 0 and b == 0:
                     tekstKastis("1", "Comic Sans", 45, 75, 75)
@@ -404,7 +433,7 @@ def mänguekraan(sudoku):#poolik
                 if a == 1 and b == 7:
                     tekstKastis("1", "Comic Sans", 45, 425, 125)
                 if a == 1 and b == 8:
-                    tekstKastis("1", "Comic Sans", 45, 475, 175)
+                    tekstKastis("1", "Comic Sans", 45, 475, 125)
                 #3.rida
                 if a == 2 and b == 0:
                     tekstKastis("1", "Comic Sans", 45, 75, 175)
@@ -538,12 +567,10 @@ def mänguekraan(sudoku):#poolik
                     tekstKastis("1", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("1", "Comic Sans", 45, 475, 475)
-                    
-                    
+                
             if evendiasukoht(112,156,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 2
-                print(sudoku)
                 #numbrite blitimine 1.rida
                 if a == 0 and b == 0:
                     tekstKastis("2", "Comic Sans", 45, 75, 75)
@@ -581,7 +608,7 @@ def mänguekraan(sudoku):#poolik
                 if a == 1 and b == 7:
                     tekstKastis("2", "Comic Sans", 45, 425, 125)
                 if a == 1 and b == 8:
-                    tekstKastis("2", "Comic Sans", 45, 475, 175)
+                    tekstKastis("2", "Comic Sans", 45, 475, 125)
                 #3.rida
                 if a == 2 and b == 0:
                     tekstKastis("2", "Comic Sans", 45, 75, 175)
@@ -719,7 +746,6 @@ def mänguekraan(sudoku):#poolik
             if evendiasukoht(163,205,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 3
-                print(sudoku)
                 #numbrite blitimine 1.rida
                 if a == 0 and b == 0:
                     tekstKastis("3", "Comic Sans", 45, 75, 75)
@@ -757,7 +783,7 @@ def mänguekraan(sudoku):#poolik
                 if a == 1 and b == 7:
                     tekstKastis("3", "Comic Sans", 45, 425, 125)
                 if a == 1 and b == 8:
-                    tekstKastis("3", "Comic Sans", 45, 475, 175)
+                    tekstKastis("3", "Comic Sans", 45, 475, 125)
                 #3.rida
                 if a == 2 and b == 0:
                     tekstKastis("3", "Comic Sans", 45, 75, 175)
@@ -895,7 +921,6 @@ def mänguekraan(sudoku):#poolik
             if evendiasukoht(212,256,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 4
-                print(sudoku)
                 #numbrite blitimine 1.rida
                 if a == 0 and b == 0:
                     tekstKastis("4", "Comic Sans", 45, 75, 75)
@@ -933,7 +958,7 @@ def mänguekraan(sudoku):#poolik
                 if a == 1 and b == 7:
                     tekstKastis("4", "Comic Sans", 45, 425, 125)
                 if a == 1 and b == 8:
-                    tekstKastis("4", "Comic Sans", 45, 475, 175)
+                    tekstKastis("4", "Comic Sans", 45, 475, 125)
                 #3.rida
                 if a == 2 and b == 0:
                     tekstKastis("4", "Comic Sans", 45, 75, 175)
@@ -1108,7 +1133,7 @@ def mänguekraan(sudoku):#poolik
                 if a == 1 and b == 7:
                     tekstKastis("5", "Comic Sans", 45, 425, 125)
                 if a == 1 and b == 8:
-                    tekstKastis("5", "Comic Sans", 45, 475, 175)
+                    tekstKastis("5", "Comic Sans", 45, 475, 125)
                 #3.rida
                 if a == 2 and b == 0:
                     tekstKastis("5", "Comic Sans", 45, 75, 175)
@@ -1246,7 +1271,6 @@ def mänguekraan(sudoku):#poolik
             if evendiasukoht(312,355,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 6
-                print(sudoku)
                 #numbrite blitimine 1.rida
                 if a == 0 and b == 0:
                     tekstKastis("6", "Comic Sans", 45, 75, 75)
@@ -1284,7 +1308,7 @@ def mänguekraan(sudoku):#poolik
                 if a == 1 and b == 7:
                     tekstKastis("6", "Comic Sans", 45, 425, 125)
                 if a == 1 and b == 8:
-                    tekstKastis("6", "Comic Sans", 45, 475, 175)
+                    tekstKastis("6", "Comic Sans", 45, 475, 125)
                 #3.rida
                 if a == 2 and b == 0:
                     tekstKastis("6", "Comic Sans", 45, 75, 175)
@@ -1422,7 +1446,6 @@ def mänguekraan(sudoku):#poolik
             if evendiasukoht(364,404,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 7
-                print(sudoku)
                 #numbrite blitimine 1.rida
                 if a == 0 and b == 0:
                     tekstKastis("7", "Comic Sans", 45, 75, 75)
@@ -1460,7 +1483,7 @@ def mänguekraan(sudoku):#poolik
                 if a == 1 and b == 7:
                     tekstKastis("7", "Comic Sans", 45, 425, 125)
                 if a == 1 and b == 8:
-                    tekstKastis("7", "Comic Sans", 45, 475, 175)
+                    tekstKastis("7", "Comic Sans", 45, 475, 125)
                 #3.rida
                 if a == 2 and b == 0:
                     tekstKastis("7", "Comic Sans", 45, 75, 175)
@@ -1598,7 +1621,6 @@ def mänguekraan(sudoku):#poolik
             if evendiasukoht(412,457,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 8
-                print(sudoku)
                 #numbrite blitimine 1.rida
                 if a == 0 and b == 0:
                     tekstKastis("8", "Comic Sans", 45, 75, 75)
@@ -1636,7 +1658,7 @@ def mänguekraan(sudoku):#poolik
                 if a == 1 and b == 7:
                     tekstKastis("8", "Comic Sans", 45, 425, 125)
                 if a == 1 and b == 8:
-                    tekstKastis("8", "Comic Sans", 45, 475, 175)
+                    tekstKastis("8", "Comic Sans", 45, 475, 125)
                 #3.rida
                 if a == 2 and b == 0:
                     tekstKastis("8", "Comic Sans", 45, 75, 175)
@@ -1774,7 +1796,6 @@ def mänguekraan(sudoku):#poolik
             if evendiasukoht(464,504,522,566,eventx,eventy):
                 a,b = valik
                 sudoku[a][b] = 9
-                print(sudoku)
                 #numbrite blitimine 1.rida
                 if a == 0 and b == 0:
                     tekstKastis("9", "Comic Sans", 45, 75, 75)
@@ -1812,7 +1833,7 @@ def mänguekraan(sudoku):#poolik
                 if a == 1 and b == 7:
                     tekstKastis("9", "Comic Sans", 45, 425, 125)
                 if a == 1 and b == 8:
-                    tekstKastis("9", "Comic Sans", 45, 475, 175)
+                    tekstKastis("9", "Comic Sans", 45, 475, 125)
                 #3.rida
                 if a == 2 and b == 0:
                     tekstKastis("9", "Comic Sans", 45, 75, 175)
@@ -1977,7 +1998,6 @@ def homescreen():
             break
         elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:  #vasakklikk = 1
             eventx, eventy = pygame.mouse.get_pos()
-            print(eventx, eventy)
             if evendiasukoht(232,467,563,647,eventx,eventy):
                 settinguteScreen()
                 break
