@@ -1,0 +1,61 @@
+                                           ---English below---
+
+! "Sudoku by Uq and Erki" (edaspidi "mäng") on Erik Mukk´i ja Uku Kanguri poolt valmistatud. !
+
+! Mängu loojad ei ole ühegi heli- ega pildifaili originaali omanikud. !
+
+! Kasutatud taustad, pildid ja muusikafailid on kokku pandud erinevatest mitte vabavaralistest failidest. !
+
+! See mäng ning kõik sellega seonduv ei ole loodud kommertskasutuseks. !
+
+! Mängu loojad lubavad kasutada seda mängu ning kõike sellega seonduvat hariduslikel eesmärkidel. !
+
+--------------------------------------------------------------------------------------------------------------
+
+Kuidas mängida?
+
+1. Enne mängu käivitamist veendu, et sul on paigaldatud "Bauhaus 93" ja "Comic Sans" font. 
+   Nende puudumisel käivita mängu kaustas olevad failid "bauhaus" ja "comicsans" ning paigalda
+   enda arvutisse need fondid.
+
+2. Enne käivitamist veendu, et kõik failid on ühes ja samas kaustas.
+
+3. Käivita "Sudoku.py", vajutades kaks (2) korda failile, mille nimi on mainitud lause esimeses osas.
+
+4. Loodetavasti jõuad iseseisvalt mänguekraanile.
+
+5. Numbri sisestamiseks vajuta tühjale kastile ning seejärel soovitavale numbrile all pool.
+
+6. Naudi
+
+--------------------------------------------------------------------------------------------------------------
+
+                                 ---In English---
+! "Sudoku by Uq and Erki" (hereinafter "the game") is a game made by Erik Mukk and Uku Kangur !
+
+! The game developers are not owners of ANY sound and picture files. !
+
+! Used backgrounds, pictures and sound files were compiled from non freeware files. !
+
+! This game, and all related, is not intended for commercial use. !
+
+! The creators of the game allow the use of this game and everything related to it for educational purposes. !
+
+--------------------------------------------------------------------------------------------------------------
+
+How to play?
+
+1. Before running the game make sure, that you "Bauhaus 93" and "Comic Sans" fonts are installed
+   in your computer. If you do not have these fonts installed, run files "bauhaus" and "comicsans"
+   To instal these fonts.
+
+2. Before running the game, make sure, that all files are in the same folder.
+
+3. Run "Sudoku.py" by clicking twice (2 times) on the file, which name was mentioned in the first part
+   of this sentence.
+
+4. Hopefully you will reach the playscreen by yourself.
+
+5. To enter the desired number into sudoku grid, click on empty box and after that on the desired number below.
+
+6. Enjoy!

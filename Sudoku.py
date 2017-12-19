@@ -16,8 +16,11 @@ ekraaniPind = pygame.display.set_mode( (720, 720) )
 global heli
 heli = False
 
+global valitudLaul
+valitudLaul = "jaapanilaul.mp3"
+
 #sudokud
-lihtneSudoku = [[7,0,0,0,0,0,6,0,1],[0,0,9,7,0,0,0,0,0],[0,0,0,0,5,0,9,3,0],[8,6,0,0,3,0,0,0,0],[4,0,3,0,0,0,0,0,9],[0,0,0,0,4,0,0,2,3],[0,8,5,0,2,0,0,0,0],[0,0,0,0,7,8,1,0,0],[9,0,1,0,0,0,0,0,9]]
+lihtneSudoku = [[7,0,0,0,0,0,6,0,1],[0,0,9,7,0,0,0,0,0],[0,0,0,0,5,0,9,3,0],[8,6,0,0,3,0,0,0,0],[4,0,3,0,0,0,0,0,9],[0,0,0,0,4,0,0,2,3],[0,8,5,0,2,0,0,0,0],[0,0,0,0,7,8,1,0,0],[9,0,1,0,0,0,0,0,8]]
 lihtneLahendus = [[7,5,8,3,9,2,6,4,1],[3,4,9,7,1,6,5,8,2],[1,2,6,8,5,4,9,3,7],[8,6,2,9,3,7,4,1,5],[4,1,3,2,8,5,7,6,9],[5,9,7,6,4,1,8,2,3],[6,8,5,1,2,9,3,7,4],[2,3,4,5,7,8,1,9,6],[9,7,1,4,6,3,2,5,8]]
 
 mediumSudoku = [[0,8,0,0,0,0,7,0,0],[5,0,0,4,6,0,1,0,0],[0,0,0,0,2,0,0,4,0],[0,4,0,3,0,0,0,9,1],[6,0,0,0,0,0,0,0,8],[2,9,0,0,0,8,0,7,0],[0,1,0,0,9,0,0,0,0],[0,0,4,0,8,3,0,0,5],[0,0,6,0,0,0,0,2,0]]
@@ -59,13 +62,14 @@ def evendiasukoht(xmin, xmax, ymin, ymax, eventx, eventy):
     else:
         return False
 
-def muusika(laulunimi):
+def muusika(laulunimi, loops):
     pygame.mixer.pre_init(44100, -16, 2, 2048)
     pygame.mixer.music.load(laulunimi)
-    pygame.mixer.music.play()
+    pygame.mixer.music.play(loops)
     
 def settinguteScreen():
     global heli
+    global valitudLaul
        
     ekraaniPind.fill(valge)
     #Taust
@@ -77,7 +81,10 @@ def settinguteScreen():
         pilt("kõlarsees.png",280,275)
     #Tagasi nupp
     tekstKastis("Tagasi", "Bauhaus 93",50,45,630)
-    
+    tekstKastis("Laul 1", "Bauhaus 93",50,45,525)
+    tekstKastis("Laul 2", "Bauhaus 93",50,215,525)
+    tekstKastis("Laul 3", "Bauhaus 93",50,390,525)
+    tekstKastis("Laul 4", "Bauhaus 93",50,560,525)
     pygame.display.flip()
     
     a = 1
@@ -91,11 +98,15 @@ def settinguteScreen():
             eventx, eventy = pygame.mouse.get_pos()
             print(eventx, eventy)
             pilt("seaded.jpg",0,0)
+            tekstKastis("Laul 1", "Bauhaus 93",50,45,525)
+            tekstKastis("Laul 2", "Bauhaus 93",50,215,525)
+            tekstKastis("Laul 3", "Bauhaus 93",50,390,525)
+            tekstKastis("Laul 4", "Bauhaus 93",50,560,525)
             tekstKastis("Tagasi", "Bauhaus 93",50,45,630)
             if evendiasukoht(202,551,242,495,eventx,eventy) and a % 2 == 1:
                 pilt("kõlarsees.png",280,275)
                 pygame.display.flip()
-                muusika("helilaul.mp3")
+                muusika("helilaul.mp3",0)
                 heli = True
                 a += 1
             elif evendiasukoht(202,551,242,495,eventx,eventy) and a % 2 != 1:
@@ -104,6 +115,14 @@ def settinguteScreen():
                 pygame.display.flip()
                 heli = False
                 a += 1
+            elif evendiasukoht(34,181,520,580,eventx,eventy):
+                valitudLaul = "helialul1.mp3"
+            elif evendiasukoht(206,351,520,580,eventx,eventy):
+                valitudLaul = "vaikusehääl.mp3"
+            elif evendiasukoht(382,527,520,580,eventx,eventy):
+                valitudLaul = "linnud.mp3"
+            elif evendiasukoht(550,698,520,580,eventx,eventy):
+                valitudLaul = "bach.mp3"
             elif evendiasukoht(39,195,617,696,eventx,eventy):
                 homescreen()
                 break
@@ -174,7 +193,7 @@ def kontrollija(sudoku, lahendus):
     else:
         return False
 
-def mänguekraan(sudoku,lahendus, väljak):#poolik
+def mänguekraan(sudoku,lahendus, väljak):
     #ekraani atribuudid
     valik = 0
     ekraaniPind.fill(valge)
@@ -183,10 +202,11 @@ def mänguekraan(sudoku,lahendus, väljak):#poolik
     tekstKastis("Tagasi", "Bauhaus 93", 50, 50, 620)
     #kontrolli nupp
     tekstKastis("Kontrolli", "Bauhaus 93", 40, 550, 115)
-    clock = pygame.time.Clock()
+    #clear
+    tekstKastis("Tühjaks!", "Bauhaus 93", 40, 550, 260)
     
     if heli:
-        muusika("helilaul1.mp3")
+        muusika(valitudLaul,10)
     
     while True:
         event = pygame.event.poll()
@@ -199,15 +219,16 @@ def mänguekraan(sudoku,lahendus, väljak):#poolik
             if evendiasukoht(21,222,595,694,eventx,eventy):
                 raskusastmed()
                 break
+            elif evendiasukoht(530,720,233,335,eventx,eventy):
+                mänguekraan(sudoku,lahendus,väljak)
+                break
             elif evendiasukoht(527,720,89,190,eventx,eventy):
                 if kontrollija(sudoku, lahendus):
                     if heli:
-                        muusika("celebration.mp3")
+                        muusika("celebration.mp3",0)
                     else:
                         continue
                 else:
-                    if heli:
-                        muusika
                     Tk().wm_withdraw()
                     messagebox.showinfo("Harjuta veel, nub", "Sa oled kõik valesti teinud!!!")
                
@@ -566,6 +587,7 @@ def mänguekraan(sudoku,lahendus, väljak):#poolik
                     tekstKastis("1", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("1", "Comic Sans", 45, 475, 475)
+                print(sudoku)
                 
             if evendiasukoht(112,156,522,566,eventx,eventy):
                 a,b = valik
@@ -741,6 +763,7 @@ def mänguekraan(sudoku,lahendus, väljak):#poolik
                     tekstKastis("2", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("2", "Comic Sans", 45, 475, 475)
+                print(sudoku)
 
             if evendiasukoht(163,205,522,566,eventx,eventy):
                 a,b = valik
@@ -916,6 +939,7 @@ def mänguekraan(sudoku,lahendus, väljak):#poolik
                     tekstKastis("3", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("3", "Comic Sans", 45, 475, 475)
+                print(sudoku)
 
             if evendiasukoht(212,256,522,566,eventx,eventy):
                 a,b = valik
@@ -1091,6 +1115,7 @@ def mänguekraan(sudoku,lahendus, väljak):#poolik
                     tekstKastis("4", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("4", "Comic Sans", 45, 475, 475)
+                print(sudoku)
 
             if evendiasukoht(263,304,522,566,eventx,eventy):
                 a,b = valik
@@ -1266,6 +1291,7 @@ def mänguekraan(sudoku,lahendus, väljak):#poolik
                     tekstKastis("5", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("5", "Comic Sans", 45, 475, 475)
+                print(sudoku)
 
             if evendiasukoht(312,355,522,566,eventx,eventy):
                 a,b = valik
@@ -1441,6 +1467,7 @@ def mänguekraan(sudoku,lahendus, väljak):#poolik
                     tekstKastis("6", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("6", "Comic Sans", 45, 475, 475)
+                print(sudoku)
 
             if evendiasukoht(364,404,522,566,eventx,eventy):
                 a,b = valik
@@ -1616,6 +1643,7 @@ def mänguekraan(sudoku,lahendus, väljak):#poolik
                     tekstKastis("7", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("7", "Comic Sans", 45, 475, 475)
+                print(sudoku)
 
             if evendiasukoht(412,457,522,566,eventx,eventy):
                 a,b = valik
@@ -1791,6 +1819,7 @@ def mänguekraan(sudoku,lahendus, väljak):#poolik
                     tekstKastis("8", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("8", "Comic Sans", 45, 475, 475)
+                print(sudoku)
 
             if evendiasukoht(464,504,522,566,eventx,eventy):
                 a,b = valik
@@ -1966,6 +1995,7 @@ def mänguekraan(sudoku,lahendus, väljak):#poolik
                     tekstKastis("9", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("9", "Comic Sans", 45, 475, 475)
+                print(sudoku)
 
         pygame.display.flip()
 
