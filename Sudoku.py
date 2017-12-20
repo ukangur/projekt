@@ -1,7 +1,6 @@
 import pygame, os
 from tkinter import *
 from tkinter import messagebox
-from pygame.locals import *
 
 #märgin, kus kohas avaneb pygame'i aken kuvaril
 x=50
@@ -96,7 +95,6 @@ def settinguteScreen():
 
         if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
             eventx, eventy = pygame.mouse.get_pos()
-            print(eventx, eventy)
             pilt("seaded.jpg",0,0)
             tekstKastis("Laul 1", "Bauhaus 93",50,45,525)
             tekstKastis("Laul 2", "Bauhaus 93",50,215,525)
@@ -170,7 +168,6 @@ def raskusastmed():
             break
         elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:  #vasakklikk = 1
             eventx, eventy = pygame.mouse.get_pos()
-            print(eventx, eventy)
             if evendiasukoht(210,530,55,145,eventx,eventy):
                 mänguekraan(lihtneSudoku,lihtneLahendus, "sudokupohieasy.png")
                 break
@@ -215,7 +212,6 @@ def mänguekraan(sudoku,lahendus, väljak):
             pygame.quit()
             break
         elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-            print(eventx, eventy)
             if evendiasukoht(21,222,595,694,eventx,eventy):
                 raskusastmed()
                 break
@@ -226,8 +222,11 @@ def mänguekraan(sudoku,lahendus, väljak):
                 if kontrollija(sudoku, lahendus):
                     if heli:
                         muusika("celebration.mp3",0)
+                        Tk().wm_withdraw()
+                        messagebox.showinfo("Palju õnne!", "Sa Võitsid!!!")
                     else:
-                        continue
+                        Tk().wm_withdraw()
+                        messagebox.showinfo("Palju õnne!", "Sa Võitsid!!!")
                 else:
                     Tk().wm_withdraw()
                     messagebox.showinfo("Harjuta veel, nub", "Sa oled kõik valesti teinud!!!")
@@ -587,7 +586,6 @@ def mänguekraan(sudoku,lahendus, väljak):
                     tekstKastis("1", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("1", "Comic Sans", 45, 475, 475)
-                print(sudoku)
                 
             if evendiasukoht(112,156,522,566,eventx,eventy):
                 a,b = valik
@@ -763,7 +761,6 @@ def mänguekraan(sudoku,lahendus, väljak):
                     tekstKastis("2", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("2", "Comic Sans", 45, 475, 475)
-                print(sudoku)
 
             if evendiasukoht(163,205,522,566,eventx,eventy):
                 a,b = valik
@@ -939,7 +936,6 @@ def mänguekraan(sudoku,lahendus, väljak):
                     tekstKastis("3", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("3", "Comic Sans", 45, 475, 475)
-                print(sudoku)
 
             if evendiasukoht(212,256,522,566,eventx,eventy):
                 a,b = valik
@@ -1115,7 +1111,6 @@ def mänguekraan(sudoku,lahendus, väljak):
                     tekstKastis("4", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("4", "Comic Sans", 45, 475, 475)
-                print(sudoku)
 
             if evendiasukoht(263,304,522,566,eventx,eventy):
                 a,b = valik
@@ -1291,7 +1286,6 @@ def mänguekraan(sudoku,lahendus, väljak):
                     tekstKastis("5", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("5", "Comic Sans", 45, 475, 475)
-                print(sudoku)
 
             if evendiasukoht(312,355,522,566,eventx,eventy):
                 a,b = valik
@@ -1467,7 +1461,6 @@ def mänguekraan(sudoku,lahendus, väljak):
                     tekstKastis("6", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("6", "Comic Sans", 45, 475, 475)
-                print(sudoku)
 
             if evendiasukoht(364,404,522,566,eventx,eventy):
                 a,b = valik
@@ -1643,7 +1636,6 @@ def mänguekraan(sudoku,lahendus, väljak):
                     tekstKastis("7", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("7", "Comic Sans", 45, 475, 475)
-                print(sudoku)
 
             if evendiasukoht(412,457,522,566,eventx,eventy):
                 a,b = valik
@@ -1819,7 +1811,6 @@ def mänguekraan(sudoku,lahendus, väljak):
                     tekstKastis("8", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("8", "Comic Sans", 45, 475, 475)
-                print(sudoku)
 
             if evendiasukoht(464,504,522,566,eventx,eventy):
                 a,b = valik
@@ -1995,7 +1986,6 @@ def mänguekraan(sudoku,lahendus, väljak):
                     tekstKastis("9", "Comic Sans", 45, 425, 475)
                 if a == 8 and b == 8:
                     tekstKastis("9", "Comic Sans", 45, 475, 475)
-                print(sudoku)
 
         pygame.display.flip()
 
