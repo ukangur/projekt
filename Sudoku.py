@@ -114,7 +114,7 @@ def settinguteScreen():
                 heli = False
                 a += 1
             elif evendiasukoht(34,181,520,580,eventx,eventy):
-                valitudLaul = "helialul1.mp3"
+                valitudLaul = "helilaul1.mp3"
             elif evendiasukoht(206,351,520,580,eventx,eventy):
                 valitudLaul = "vaikusehääl.mp3"
             elif evendiasukoht(382,527,520,580,eventx,eventy):
